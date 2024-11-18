@@ -1,0 +1,50 @@
+.pro-grid{
+    display: grid;
+    grid-template-columns: repeat(3,23vw);
+    grid-template-rows: 17vw 17vw;
+    gap: 10px;
+}
+
+.pro-grid div{
+    padding: 10px;
+    font-size: 0.6em;
+    background-color:white;
+    color: black;
+}
+
+.pro-grid div:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.pro-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-section > div:first-child{
+    align-self: self-start;
+    margin-left: 20px;
+}
+
+.pro-section h1{
+    font-size: 1.2em;
+    /* text-shadow: 2px 2px 1px  whitesmoke ; */
+
+}
+
+.modal-wrap{
+    display: flex;
+    gap: 10px;
+}
+
+.modal-wrap > div:first-child{
+    width: 35vw;
+    border: 1px solid red;
+}
+
+.modal-wrap > div:last-child{
+    width: 65vw;
+    border: 1px solid red;
+
+}

@@ -1,7 +1,111 @@
-.App {
-  text-align: center;
+html, body {
+  height: auto;
+  margin: 0;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
-.main-div{
-  margin: auto;
+.wrap{
+  background: url('https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') fixed;
+  opacity: 0.8;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.main h1 {
+  margin-left: 30vw;
+  font-size: 5vw;
+  color: black;
+  opacity: 0;
+  transform: translateY(50px); /* 처음에는 아래로 숨겨둔다 */
+  transition: opacity 2s ease, transform 2s ease;
+  text-shadow: 3px 4px 1px  whitesmoke ;
+
+
+}
+
+.main ul {
+  opacity: 0;
+  transform: translateY(50px); /* 처음에는 아래로 숨겨둔다 */
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+h1.visible, ul.visible {
+  opacity: 1;
+  transform: translateY(0); /* 애니메이션이 실행되면 원위치로 돌아오게 함 */
+}
+
+.main{
+  display: flex;
+  width: 100%;
+  justify-content:flex-start;
+}
+
+.main-ul-div{
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+  font-size: 0.7em;
+}
+
+li {
+  padding: 4px;
+  cursor: pointer;
+  color: white;
+  width: 5em;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px black;
+}
+
+li:hover {
+  font-weight: 800;
+}
+
+
+/* 반응형 디자인을 위한 미디어 쿼리 추가 */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main h1 {
+    font-size: 5vw;
+    margin-left: 0;
+  }
+
+  ul {
+    font-size: 1em;
+    gap: 10px;
+  }
+
+  li {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .main h1 {
+    font-size: 6vw;
+  }
+
+  ul {
+    font-size: 1em;
+  }
+
+  li {
+    font-size: 0.5em;
+  }
 }

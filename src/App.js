@@ -1,99 +1,158 @@
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { device } from './theme'; // 미디어 쿼리가 저장된 파일을 가져온다고 가정
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
+import './Aboutme.css'
+import './Projects.css'
+import testimage from './images/testimage.jpg';
+import ReactModal from 'react-modal';
 
-const Container = styled.div`
-   width: 100%;
-   height: auto;  /* 높이를 자동으로 설정하여 콘텐츠가 많으면 스크롤 가능 */
-   min-height: 100vh;  /* 최소 높이는 100vh로 설정 */
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: #f0f8ff;
+const Section = styled.div`
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  background:  ${(props) => props.bgColor ? props.bgColor : null
+    // 'linear-gradient(#e66465, #9198e5);'
+      
+    }
 `;
-
-const MainDiv = styled.div`
-   text-align: center;
-   padding: 20px;
-   h1 {
-      font-size: 4vw;    /* 화면 너비에 비례한 글자 크기 */
-      margin-bottom: 20px;
-   }
-
-   button {
-      padding: 10px 20px;
-      font-size: 1.5vw;
-      cursor: pointer;
-      border: 1px solid black;
-      border-radius: 0px;
-      background-color: #f0f8ff;
-      color: black;
-   }
-
-   /* 반응형 조정 */
-   @media ${device.tablet} {
-      width: 80vw;
-      height: auto;
-      min-height: 70vh;
-      h1 {
-         font-size: 5vw;
-      }
-      button {
-         font-size: 2vw;
-      }
-   }
-
-   @media ${device.mobile} {
-      width: 90vw;
-      height: auto;
-      min-height: 80vh;
-      h1 {
-         font-size: 6vw;
-      }
-      button {
-         font-size: 3vw;
-      }
-   }
-`;
-
-// 각 페이지를 위한 컴포넌트
-function Home() {
-   return (
-      <Container>
-         <MainDiv>
-            <h1>
-               WELCOME <br />
-               I'M HYONI
-            </h1>
-            <div>
-               <Link to="/about">
-                  <button>INTRO</button>
-               </Link>
-            </div>
-         </MainDiv>
-      </Container>
-   );
-}
-
-function About() {
-   return (
-      <Container>
-         <MainDiv>
-            <h1>About Me</h1>
-            <p>This is a little bit about me.</p>
-            <Link to="/">Go Home</Link>
-         </MainDiv>
-      </Container>
-   );
-}
 
 function App() {
-   return (
-      <Routes>
-         <Route path="/" element={<Home />} />
-         <Route path="/about" element={<About />} />
-      </Routes>
-   )
+  const h1 = useRef();
+  const ul = useRef();  
+  const [scrollY, setScrollY] = useState(0); // 스크롤 위치 상태
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY); 
+    };
+
+    window.addEventListener('scroll', handleScroll); 
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); // 컴포넌트 언마운트 시 이벤트 리스너 제거
+    };
+  }, []); 
+
+  // 스크롤 위치에 따라 글자 나타내기
+  useEffect(() => {
+    if (scrollY > 100) {
+      h1.current.classList.remove('visible')
+      ul.current.classList.remove('visible');
+    } else {
+      h1.current.classList.add('visible');
+      ul.current.classList.add('visible');
+    }
+  }, [scrollY]); 
+
+   //모달창 여부 
+   const [modalOpen, setModalOpen] = useState(true)
+   //클릭하면 모달창 열고 닫기
+   const showModal = () => {
+     setModalOpen(!modalOpen)
+   }
+
+  return (
+    <div className='wrap'>
+      <Section >
+        <div className="main">
+          <div className='main-ul-div'>
+              <ul ref={ul}>
+                <li>about me</li>
+                <li>projects</li>
+                <li>contact</li>
+              </ul>
+            </div>
+          <h1 ref={h1}>WELCOME<br />I'M HYONI</h1>    
+        </div>
+      </Section>
+
+      <Section bgColor='rgb(253, 253, 253, 0.8)' className='pro-section' >
+        <div className='pro-div'>
+          <h1>ABOUT ME</h1>
+        </div>
+        <div className='aboutme-flex'>
+          <div>
+            <img src={testimage}></img>
+            <p>KIM HYUNKYUNG</p>
+          </div>
+          <div>
+            <p>여기는 소개</p>
+            <p>소개</p>
+            <p>소개소개소개</p>
+          </div>
+        </div>
+      </Section>
+      <Section className='pro-section'>
+        <div className='pro-div'>
+          <h1>PROJECTS</h1>
+        </div>
+        <div className='pro-grid'>
+          <div>TODO</div>
+          <div>BOOK STORE</div>
+          <div>MEDI CLICK1</div>
+          <div>MEDI CLICK2</div>
+          <div>MEDI CLICK3</div>
+          <div>PORTFOLIO</div>
+        </div>
+      </Section>
+      <Section bgColor='rgb(253, 253, 253, 0.8)' className='pro-section'>
+        <div className='pro-div'>
+          <h1>CONTACT</h1>
+        </div>
+        <div>
+
+        </div>
+      </Section>
+      {
+        modalOpen?
+        <ReactModal
+        isOpen={true}
+            ariaHideApp={false}
+            onRequestClose={() => {setModalOpen(false)}}
+            style={{
+              overlay: {
+                position: 'fixed',
+                borderRadius : 10,
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundColor: 'rgba(0,0,0, 0.6)'
+              },
+              content: {
+                position: 'absolute',
+                width: '70vw',
+                height: '70vh',
+                top: '10%',
+                left: '15%',
+                right: '30%',
+                bottom: '50%',
+                border: '1px solid #ccc',
+                background: '#fff',
+                overflow: 'auto',
+                WebkitOverflowScrolling: 'touch',
+                borderRadius: '4px',
+                outline: 'none',
+              }
+            }}
+            >
+              <div className='modal-wrap'>
+                <div>
+                <i class="bi bi-file-earmark-code"></i>THIS PROJECT 
+                </div>
+                <div>
+                  프로젝트 이미지 영역
+                </div>
+              </div>
+
+        </ReactModal>
+        :
+        null
+      }
+    </div>
+  );
 }
 
 export default App;
