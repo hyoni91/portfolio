@@ -5,6 +5,7 @@ import './Aboutme.css'
 import './Projects.css'
 import testimage from './images/testimage.jpg';
 import ReactModal from 'react-modal';
+import IntroModal from './IntroModal';
 
 const Section = styled.div`
   height: 100vh;
@@ -22,6 +23,12 @@ function App() {
   const h1 = useRef();
   const ul = useRef();  
   const [scrollY, setScrollY] = useState(0); // 스크롤 위치 상태
+  const [intro, setIntro] = useState({
+    name : '',
+    content : ''
+  })
+  const [project, setProject] = useState()
+  const [images, setImages] = useState() //이미지들 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,7 +54,7 @@ function App() {
   }, [scrollY]); 
 
    //모달창 여부 
-   const [modalOpen, setModalOpen] = useState(true)
+   const [modalOpen, setModalOpen] = useState(false)
    //클릭하면 모달창 열고 닫기
    const showModal = () => {
      setModalOpen(!modalOpen)
@@ -89,12 +96,12 @@ function App() {
           <h1>PROJECTS</h1>
         </div>
         <div className='pro-grid'>
-          <div>TODO</div>
-          <div>BOOK STORE</div>
-          <div>MEDI CLICK1</div>
-          <div>MEDI CLICK2</div>
-          <div>MEDI CLICK3</div>
-          <div>PORTFOLIO</div>
+          <div onClick={()=>{setModalOpen(true); setProject(1) }}>TODO LIST</div>
+          <div onClick={()=>{setModalOpen(true); setProject(2)}}>BOOK STORE</div>
+          <div onClick={()=>{setModalOpen(true); setProject(3)}}>MEDI CLICK1</div>
+          <div onClick={()=>{setModalOpen(true); setProject(4)}}>MEDI CLICK2</div>
+          <div onClick={()=>{setModalOpen(true); setProject(5)}}>MEDI CLICK3</div>
+          <div onClick={()=>{setModalOpen(true); setProject(6)}}>PORTFOLIO</div>
         </div>
       </Section>
       <Section bgColor='rgb(253, 253, 253, 0.8)' className='pro-section'>
@@ -140,7 +147,9 @@ function App() {
             >
               <div className='modal-wrap'>
                 <div>
-                <i class="bi bi-file-earmark-code"></i>THIS PROJECT 
+                <i class="bi bi-file-earmark-code"></i>
+                프로젝트 소개 영역
+                <IntroModal intro={intro} setIntro={setIntro} project={project}/>
                 </div>
                 <div>
                   프로젝트 이미지 영역
