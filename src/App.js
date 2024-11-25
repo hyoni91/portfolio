@@ -25,6 +25,7 @@ function App() {
   const [scrollY, setScrollY] = useState(0); // 스크롤 위치 상태
   const [intro, setIntro] = useState({
     name : '',
+    video : '',
     content : ''
   })
   const [project, setProject] = useState()
@@ -83,9 +84,11 @@ function App() {
           <div>
             <img src={testimage}></img>
             <p>KIM HYUNKYUNG</p>
+            <p>GIT HUB</p>
+            <p>BLOG</p>
           </div>
           <div>
-            <p>여기는 소개</p>
+            <p>SCHOOL</p>
             <p>소개</p>
             <p>소개소개소개</p>
           </div>
@@ -130,11 +133,11 @@ function App() {
               },
               content: {
                 position: 'absolute',
-                width: '70vw',
-                height: '70vh',
+                width: '87vw',
+                height: '77vh',
                 top: '10%',
-                left: '15%',
-                right: '30%',
+                left: '8%',
+                right: '10%',
                 bottom: '50%',
                 border: '1px solid #ccc',
                 background: '#fff',
@@ -147,8 +150,6 @@ function App() {
             >
               <div className='modal-wrap'>
                 <div>
-                <i class="bi bi-file-earmark-code"></i>
-                프로젝트 소개 영역
                 <IntroModal intro={intro} setIntro={setIntro} project={project}/>
                 </div>
                 <div>

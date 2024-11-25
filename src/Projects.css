@@ -39,12 +39,16 @@
 }
 
 .modal-wrap > div:first-child{
-    width: 35vw;
-    border: 1px solid red;
+    width: 20vw;
+    /* border: 1px solid red; */
 }
 
 .modal-wrap > div:last-child{
-    width: 65vw;
-    border: 1px solid red;
+    width: 77vw;
+    /* border: 1px solid red; */
+}
 
+.videoTag{
+    width: 50vw;
+    border: 1px solid lightgrey;
 }
