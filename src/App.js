@@ -6,6 +6,7 @@ import './Projects.css'
 import testimage from './images/testimage.jpg';
 import ReactModal from 'react-modal';
 import IntroModal from './IntroModal';
+import { Link } from 'react-router-dom';
 
 const Section = styled.div`
   height: 100vh;
@@ -83,9 +84,19 @@ function App() {
         <div className='aboutme-flex'>
           <div>
             <img src={testimage}></img>
-            <p>KIM HYUNKYUNG</p>
-            <p>GIT HUB</p>
-            <p>BLOG</p>
+            <h4>KIM HYUNKYUNG</h4>
+            <h5>
+              <i class="bi bi-github"></i>
+              <a href='https://github.com/hyoni91' target='_blank' rel="noopener noreferrer">
+                 hyoni's github
+              </a>  
+            </h5>
+            <h5>
+              <i class="bi bi-chat-heart"></i>
+              <a href='https://zenn.dev/hyoni' target='_blank' rel="noopener noreferrer">
+                 hyoni's blog
+              </a>
+            </h5>
           </div>
           <div>
             <p>SCHOOL</p>
@@ -112,7 +123,8 @@ function App() {
           <h1>CONTACT</h1>
         </div>
         <div>
-
+          <h4>mail</h4>
+          <h4>tel</h4>
         </div>
       </Section>
       {

@@ -15,6 +15,7 @@ const IntroModal = ({intro,setIntro,project})=>{
         detail : 
             <>
             2024.07.20 ~ 2024.08.20 <br/>
+            <br/>
             - データベース作業 <br/>
             - メインページデザイン <br/>
             - 会員登録 / ログイン機能の実装 <br/>
@@ -34,12 +35,12 @@ const IntroModal = ({intro,setIntro,project})=>{
         detail :
         <>
         2024.08.23 ～ 2024.09.06 <br/>
-        リーダー/ データベース設計/機能実装とデザイン <br/>
-
+        <i class="bi bi-person-circle"></i>リーダー/DB設計/メイン機能の実装＆デザイン <br/>
+        <br/>
         - データベース作業 <br/>
         - メインページのデザイン <br/>
         - 会員登録 / ログイン機能の実装 <br/>
-        - 医療スタッフ / 診療科ページの実装 <br/>
+        - 医療スタッフ / 診療科ページの実装 <br/>メイン
         - 掲示板の作成、編集、削除機能の実装 <br/>
         - リアルタイム予約機能の実装 <br/>
         - 予約状況一覧ページの実装 <br/>
@@ -50,11 +51,12 @@ const IntroModal = ({intro,setIntro,project})=>{
     const project4 = {
         name : '',
         video : '',
-        content : '本プロジェクトでは、Raspberry Piを使用してリアルタイムで温度を取得し、病院管理者用のダッシュボードを視覚的に実装しました。危険温度を超えた場合、アラートが表示され、テーブル内のアイコンの色が変わるように設計されています。',
+        content : 'Raspberry Piを使用してリアルタイムで温度を取得し、病院管理者用のダッシュボードを視覚的に実装しました。危険温度を超えた場合、アラートが表示され、テーブル内のアイコンの色が変わるように設計されています。',
         detail :
         <>
             2024.09.09 ～ 2024.09.27 <br/>
-            リーダー/デザイン/機能追加 <br/>
+            <i class="bi bi-person-circle"></i>リーダー/デザイン/機能追加 <br/>
+            <br/>
             - データベース作業<br/>
             - Raspberry Piを用いた作業<br/>
             - DB挿入および接続<br/>
@@ -62,20 +64,33 @@ const IntroModal = ({intro,setIntro,project})=>{
             - Reactチャート機能の実装<br/>
             - リアルタイム温度グラフ機能の実装<br/>
             - 天気APIを使用した機能の実装<br/>
-            - Kakao Map APIを利用したナビゲーションおよびルート検索機能の実装   
         </>
     }
 
     const project5 = {
         name : '受注システム管理',
         video : '',
-        content : ''
+        content : '病院側（取引先）からの注文を受けた後、受注状況を管理し、在庫および配送まで処理できるように実装しました。',
+        detail :
+        <>
+            2024年9月30日～2024年10月23日 <br/>
+            <i class="bi bi-person-circle"></i>リーダー/DB設計/取引先&受注管理ページ/在庫管理ページ<br/>
+            <br/>
+            - データベース作業<br/>
+            - 受注・発注ページのデザイン<br/>
+            - アイテム登録機能の実装<br/>
+            - 取引先管理状況機能の実装<br/>
+            - 受注・発注機能の実装<br/>
+            - DBのトリガー作業<br/>
+            - 現在の在庫状況機能の実装<br/>
+            - 配送状況機能の実装<br/>
+        </>
     }
 
     const project6 = {
         name : 'PORTFOLIOサイト',
         video : '',
-        content : ''
+        content : 'プロジェクトをまとめたサイトを制作しました。'
     }
     useEffect(()=>{
         switch(project){
@@ -99,7 +114,7 @@ const IntroModal = ({intro,setIntro,project})=>{
     return(
     <>
         <div>
-            <h4><i class="bi bi-archive"></i>{intro.name}</h4>
+            <h4><i class="bi bi-archive"></i> {intro.name}</h4>
             <p>{intro.content}</p>
             <hr/>
             <p><i class="bi bi-calendar-week"></i>{intro.detail}</p>
