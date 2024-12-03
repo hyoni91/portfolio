@@ -7,6 +7,7 @@ import testimage from './images/testimage.jpg';
 import ReactModal from 'react-modal';
 import IntroModal from './IntroModal';
 import { Link } from 'react-router-dom';
+import ImageModal from './ImageModal';
 
 const Section = styled.div`
   height: 100vh;
@@ -165,7 +166,7 @@ function App() {
                 <IntroModal intro={intro} setIntro={setIntro} project={project}/>
                 </div>
                 <div>
-                  프로젝트 이미지 영역
+                <ImageModal intro={intro} setIntro={setIntro} project={project}/>
                 </div>
               </div>
 
