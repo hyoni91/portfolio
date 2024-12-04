@@ -39,12 +39,12 @@
 }
 
 .modal-wrap > div:first-child{
-    width: 26vw;
+    width: 36vw;
     /* border: 1px solid red; */
 }
 
 .modal-wrap > div:last-child{
-    width: 69vw;
+    width: 61vw;
     /* border: 1px solid red; */
 }
 

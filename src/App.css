@@ -129,6 +129,11 @@ a:hover{
 }
 
 
+.sliderimg img{
+  width: 850px;
+  margin: auto;
+  margin-top: 35px;
+}
 
 /* 통통 튀는 애니메이션 예시 */
 

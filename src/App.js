@@ -8,6 +8,10 @@ import ReactModal from 'react-modal';
 import IntroModal from './IntroModal';
 import { Link } from 'react-router-dom';
 import ImageModal from './ImageModal';
+// import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 
 const Section = styled.div`
   height: 100vh;
@@ -31,7 +35,7 @@ function App() {
     content : ''
   })
   const [project, setProject] = useState()
-  const [images, setImages] = useState() //이미지들 
+  const [images, setImages] = useState([]) //이미지들 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -166,7 +170,7 @@ function App() {
                 <IntroModal intro={intro} setIntro={setIntro} project={project}/>
                 </div>
                 <div>
-                <ImageModal intro={intro} setIntro={setIntro} project={project}/>
+                <ImageModal images={images} setImages={setImages} project={project}/>
                 </div>
               </div>
 
