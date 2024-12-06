@@ -43,10 +43,7 @@ const ImageModal = ({images,setImages,project})=>{
                 break;
             case 3 :  setImages(
                 [
-                    './images/yoyaku1.jpg',
-                    './images/yoyaku2.jpg',
-                    './images/yoyaku3.jpg',
-                    './images/yoyaku4.jpg'
+
                 ]
             )
 

@@ -118,7 +118,7 @@ const IntroModal = ({intro,setIntro,project})=>{
             <p>{intro.content}</p>
             <hr/>
             <p><i class="bi bi-calendar-week"></i>{intro.detail}</p>
-            
+            <p>動画試演</p>
         </div>
         {/* <video className="videoTag" controls autoPlay loop>
              <source src={intro.video} type="video/mp4" />
