@@ -35,7 +35,7 @@ const IntroModal = ({intro,setIntro,project})=>{
         detail :
         <>
         2024.08.23 ～ 2024.09.06 <br/>
-        <i class="bi bi-person-circle"></i>リーダー/DB設計/メイン機能の実装＆デザイン <br/>
+        <i class="bi bi-person-circle"></i>リーダー/DB設計/メイン機能＆デザイン <br/>
         <br/>
         - データベース作業 <br/>
         - メインページのデザイン <br/>
@@ -74,7 +74,7 @@ const IntroModal = ({intro,setIntro,project})=>{
         detail :
         <>
             2024年9月30日～2024年10月23日 <br/>
-            <i class="bi bi-person-circle"></i>リーダー/DB設計/取引先&受注管理ページ/在庫管理ページ<br/>
+            <i class="bi bi-person-circle"></i>リーダー/DB設計/取引先&受注管理＆在庫管理ページ<br/>
             <br/>
             - データベース作業<br/>
             - 受注・発注ページのデザイン<br/>

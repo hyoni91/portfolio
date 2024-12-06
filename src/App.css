@@ -130,9 +130,9 @@ a:hover{
 
 
 .sliderimg img{
-  width: 850px;
+  width: 60vw;
   margin: auto;
-  margin-top: 35px;
+  margin-top: 3vw;
 }
 
 /* 통통 튀는 애니메이션 예시 */

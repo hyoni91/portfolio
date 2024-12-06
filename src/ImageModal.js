@@ -21,63 +21,66 @@ const ImageModal = ({images,setImages,project})=>{
         switch(project){
             case 1 : setImages(
                 [
-                    './images/bookshop1.jpg',
-                    './images/bookshop2.jpg',
-                    './images/bookshop3.jpg',
-                    './images/bookshop4.jpg',
-                    './images/bookshop5.jpg',
-                    './images/bookshop6.jpg'
+                    '/portfolio/images/bookshop1.jpg', 
+                    '/portfolio/images/bookshop2.jpg',
+                    '/portfolio/images/bookshop3.jpg',
+                    '/portfolio/images/bookshop4.jpg',
+                    '/portfolio/images/bookshop5.jpg',
+                    '/portfolio/images/bookshop6.jpg'
                 ]
             )
                 break;
             case 2 : setImages(
                 [
-                    './images/bookshop1.jpg',
-                    './images/bookshop2.jpg',
-                    './images/bookshop3.jpg',
-                    './images/bookshop4.jpg',
-                    './images/bookshop5.jpg',
-                    './images/bookshop6.jpg'
+                   '/portfolio/images/bookshop1.jpg',
+                    '/portfolio/images/bookshop2.jpg',
+                    '/portfolio/images/bookshop3.jpg',
+                    '/portfolio/images/bookshop4.jpg',
+                    '/portfolio/images/bookshop5.jpg',
+                    '/portfolio/images/bookshop6.jpg'
                 ]
             )
                 break;
             case 3 :  setImages(
                 [
-
+                    '/portfolio/images/yoyaku1.jpg', 
+                    '/portfolio/images/yoyaku2.jpg',
+                    '/portfolio/images/yoyaku3.jpg',
+                    '/portfolio/images/yoyaku4.jpg'
                 ]
             )
 
                 break;
             case 4 :  setImages(
                 [
-                    './images/bookshop1.jpg',
-                    './images/bookshop2.jpg',
-                    './images/bookshop3.jpg',
-                    './images/bookshop4.jpg',
-                    './images/bookshop5.jpg',
-                    './images/bookshop6.jpg'
+                    '/portfolio/images/bookshop1.jpg', 
+                    '/portfolio/images/bookshop2.jpg',
+                    '/portfolio/images/bookshop3.jpg',
+                    '/portfolio/images/bookshop4.jpg',
+                    '/portfolio/images/bookshop5.jpg',
+                    '/portfolio/images/bookshop6.jpg'
                 ]
             )
                 break;
             case 5 :  setImages(
                 [
-                    './images/bookshop1.jpg',
-                    './images/bookshop2.jpg',
-                    './images/bookshop3.jpg',
-                    './images/bookshop4.jpg',
-                    './images/bookshop5.jpg',
-                    './images/bookshop6.jpg'
+                    '/portfolio/images/bookshop1.jpg', 
+                    '/portfolio/images/bookshop2.jpg',
+                    '/portfolio/images/bookshop3.jpg',
+                    '/portfolio/images/bookshop4.jpg',
+                    '/portfolio/images/bookshop5.jpg',
+                    '/portfolio/images/bookshop6.jpg'
                 ]
             )
                 break;
             case 6 : setImages(
                 [
-                    './images/bookshop1.jpg',
-                    './images/bookshop2.jpg',
-                    './images/bookshop3.jpg',
-                    './images/bookshop4.jpg',
-                    './images/bookshop5.jpg',
-                    './images/bookshop6.jpg'
+                    '/portfolio/images/bookshop1.jpg', 
+                    '/portfolio/images/bookshop2.jpg',
+                    '/portfolio/images/bookshop3.jpg',
+                    '/portfolio/images/bookshop4.jpg',
+                    '/portfolio/images/bookshop5.jpg',
+                    '/portfolio/images/bookshop6.jpg'
                 ]
             )
             
