@@ -35,7 +35,7 @@ const IntroModal = ({intro,setIntro,project})=>{
         detail :
         <>
         2024.08.23 ～ 2024.09.06 <br/>
-        <i class="bi bi-person-circle"></i>リーダー/DB設計/メイン機能＆デザイン <br/>
+        <i class="bi bi-person-circle"></i> リーダー/DB設計/メイン機能＆デザイン <br/>
         <br/>
         - データベース作業 <br/>
         - メインページのデザイン <br/>
@@ -49,13 +49,13 @@ const IntroModal = ({intro,setIntro,project})=>{
     }
 
     const project4 = {
-        name : '',
+        name : 'リアルタイム温度管理',
         video : '',
         content : 'Raspberry Piを使用してリアルタイムで温度を取得し、病院管理者用のダッシュボードを視覚的に実装しました。危険温度を超えた場合、アラートが表示され、テーブル内のアイコンの色が変わるように設計されています。',
         detail :
         <>
             2024.09.09 ～ 2024.09.27 <br/>
-            <i class="bi bi-person-circle"></i>リーダー/デザイン/機能追加 <br/>
+            <i class="bi bi-person-circle"></i> リーダー/デザイン/機能追加 <br/>
             <br/>
             - データベース作業<br/>
             - Raspberry Piを用いた作業<br/>
@@ -73,8 +73,8 @@ const IntroModal = ({intro,setIntro,project})=>{
         content : '病院側（取引先）からの注文を受けた後、受注状況を管理し、在庫および配送まで処理できるように実装しました。',
         detail :
         <>
-            2024年9月30日～2024年10月23日 <br/>
-            <i class="bi bi-person-circle"></i>リーダー/DB設計/取引先&受注管理＆在庫管理ページ<br/>
+             2024年9月30日～2024年10月23日 <br/>
+            <i class="bi bi-person-circle"></i> リーダー/DB設計/取引先&受注管理＆在庫管理ページ<br/>
             <br/>
             - データベース作業<br/>
             - 受注・発注ページのデザイン<br/>
@@ -90,7 +90,14 @@ const IntroModal = ({intro,setIntro,project})=>{
     const project6 = {
         name : 'PORTFOLIOサイト',
         video : '',
-        content : 'プロジェクトをまとめたサイトを制作しました。'
+        content : '今まで取り組んだプロジェクトをまとめたサイトです。こちらでは、プロジェクトの内容と機能の説明、動画試演などを確認できます。',
+        detail : 
+        <>
+         2024年11月20日～ING <br/><br/>
+            - レイアウト設計<br/>
+            - 内容まとめ<br/>
+            
+        </>
     }
     useEffect(()=>{
         switch(project){
@@ -105,8 +112,8 @@ const IntroModal = ({intro,setIntro,project})=>{
             case 5 : setIntro(project5)
                 break;
             case 6 : setIntro(project6)
-            default:
-        setIntro({ name: 'Unknown Project', content: 'No details available.', video: '' });
+            // default:
+        // setIntro({ name: 'Unknown Project', content: 'No details available.', video: '' });
         }
     },[setIntro,project])
 
@@ -117,7 +124,7 @@ const IntroModal = ({intro,setIntro,project})=>{
             <h4><i class="bi bi-archive"></i> {intro.name}</h4>
             <p>{intro.content}</p>
             <hr/>
-            <p><i class="bi bi-calendar-week"></i>{intro.detail}</p>
+            <p><i class="bi bi-calendar-week"></i> {intro.detail}</p>
             <p>動画試演</p>
         </div>
         {/* <video className="videoTag" controls autoPlay loop>

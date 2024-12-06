@@ -53,23 +53,23 @@ const ImageModal = ({images,setImages,project})=>{
                 break;
             case 4 :  setImages(
                 [
-                    '/portfolio/images/bookshop1.jpg', 
-                    '/portfolio/images/bookshop2.jpg',
-                    '/portfolio/images/bookshop3.jpg',
-                    '/portfolio/images/bookshop4.jpg',
-                    '/portfolio/images/bookshop5.jpg',
-                    '/portfolio/images/bookshop6.jpg'
+                    '/portfolio/images/ras1.jpg', 
+                    '/portfolio/images/ras2.jpg',
+                    '/portfolio/images/ras3.jpg',
+                    '/portfolio/images/ras4.jpg',
+                    '/portfolio/images/ras5.jpg',
                 ]
             )
                 break;
             case 5 :  setImages(
                 [
-                    '/portfolio/images/bookshop1.jpg', 
-                    '/portfolio/images/bookshop2.jpg',
-                    '/portfolio/images/bookshop3.jpg',
-                    '/portfolio/images/bookshop4.jpg',
-                    '/portfolio/images/bookshop5.jpg',
-                    '/portfolio/images/bookshop6.jpg'
+                    '/portfolio/images/jyucyuu1.jpg', 
+                    '/portfolio/images/jyucyuu2.jpg',
+                    '/portfolio/images/jyucyuu3.jpg',
+                    '/portfolio/images/jyucyuu4.jpg',
+                    '/portfolio/images/jyucyuu5.jpg',
+                    '/portfolio/images/jyucyuu6.jpg',
+                    '/portfolio/images/jyucyuu7.jpg'
                 ]
             )
                 break;
