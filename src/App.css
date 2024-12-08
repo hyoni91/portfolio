@@ -23,7 +23,7 @@ section {
 }
 
 .main h1 {
-  margin-left: 30vw;
+  margin-left: 35vw;
   font-size: 5vw;
   color: black;
   opacity: 0;
@@ -51,10 +51,10 @@ h1.visible, ul.visible {
   justify-content:flex-start;
 }
 
-.main-ul-div{
+/* .main-ul-div{
   display: flex;
-}
-
+} */
+/* 
 ul {
   list-style: none;
   padding-left: 0;
@@ -77,7 +77,7 @@ li {
 
 li:hover {
   font-weight: 800;
-}
+} */
 
 
 /* 반응형 디자인을 위한 미디어 쿼리 추가 */
@@ -93,28 +93,28 @@ li:hover {
     margin-left: 0;
   }
 
-  ul {
+  /* ul {
     font-size: 1em;
     gap: 10px;
   }
 
   li {
     font-size: 0.9em;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
   .main h1 {
     font-size: 6vw;
   }
-
+/* 
   ul {
     font-size: 1em;
   }
 
   li {
     font-size: 0.5em;
-  }
+  } */
 }
 
 a{
@@ -136,4 +136,3 @@ a:hover{
 }
 
 /* 통통 튀는 애니메이션 예시 */
-

@@ -53,10 +53,10 @@ function App() {
   useEffect(() => {
     if (scrollY > 100) {
       h1.current.classList.remove('visible')
-      ul.current.classList.remove('visible');
+      // ul.current.classList.remove('visible');
     } else {
       h1.current.classList.add('visible');
-      ul.current.classList.add('visible');
+      // ul.current.classList.add('visible');
     }
   }, [scrollY]); 
 
@@ -72,11 +72,11 @@ function App() {
       <Section >
         <div className="main">
           <div className='main-ul-div'>
-              <ul ref={ul}>
+              {/* <ul ref={ul}>
                 <li>about me</li>
                 <li>projects</li>
                 <li>contact</li>
-              </ul>
+              </ul> */}
             </div>
           <h1 ref={h1}>WELCOME<br />I'M HYONI</h1>    
         </div>
@@ -117,9 +117,18 @@ function App() {
         <div className='pro-grid'>
           <div onClick={()=>{setModalOpen(true); setProject(1) }}>TODO LIST</div>
           <div onClick={()=>{setModalOpen(true); setProject(2)}}>BOOK STORE</div>
-          <div onClick={()=>{setModalOpen(true); setProject(3)}}>MEDI CLICK1</div>
-          <div onClick={()=>{setModalOpen(true); setProject(4)}}>MEDI CLICK2</div>
-          <div onClick={()=>{setModalOpen(true); setProject(5)}}>MEDI CLICK3</div>
+          <div onClick={()=>{setModalOpen(true); setProject(3)}}>
+            MEDI CLICK1
+            <img src='/portfolio/images/medi1.jpg'></img>
+          </div>
+          <div onClick={()=>{setModalOpen(true); setProject(4)}}>
+            MEDI CLICK2
+            <img src='/portfolio/images/medi2.jpg'></img>
+          </div>
+          <div onClick={()=>{setModalOpen(true); setProject(5)}}>
+            MEDI CLICK3
+            <img src='/portfolio/images/medi3.png'></img>
+          </div>
           <div onClick={()=>{setModalOpen(true); setProject(6)}}>PORTFOLIO</div>
         </div>
       </Section>

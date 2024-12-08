@@ -5,6 +5,15 @@
     gap: 10px;
 }
 
+.pro-grid img{
+    width: 21vw;
+    height: 20vh;
+    /* border: 1px solid darkgray; */
+    margin: auto;
+    margin-left: 0.4vw;
+    margin-top: 1vw;
+}
+
 .pro-grid div{
     padding: 10px;
     font-size: 0.6em;
