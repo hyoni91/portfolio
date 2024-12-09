@@ -108,8 +108,9 @@ function App() {
                 その後、日本と韓国の架け橋になる仕事を目指して韓国語講師として活動。<br/>
                 2020年に沖縄へ移住後、スーパー運営や韓国語講師、翻訳業務を兼務。<br/>
 　              2024年4月からは韓国のプログラミングスクールに通い、<br/>
-                基礎知識を習得しながら3つのプロジェクトを無事に完了しました。<br/>
-                現在はポートフォリオ作成やブログ執筆を通じて、さらなるスキルアップに取り組んでいます。
+                基礎知識を習得しながら3つのプロジェクトを無事に完了。<br/>
+                  　 現在はポートフォリオ作成やブログ執筆を通じて、<br/>
+                  さらなるスキルアップに取り組んでいます。
             </p>
 
           </div>
@@ -120,8 +121,14 @@ function App() {
           <h1>PROJECTS</h1>
         </div>
         <div className='pro-grid'>
-          <div onClick={()=>{setModalOpen(true); setProject(1) }}>TODO LIST</div>
-          <div onClick={()=>{setModalOpen(true); setProject(2)}}>BOOK STORE</div>
+          <div onClick={()=>{setModalOpen(true); setProject(1) }}>
+            TODO LIST
+            <img src='/portfolio/images/todo.png'></img>
+          </div>
+          <div onClick={()=>{setModalOpen(true); setProject(2)}}>
+            BOOK STORE
+            <img src='/portfolio/images/bookmain.jpg'></img>
+          </div>
           <div onClick={()=>{setModalOpen(true); setProject(3)}}>
             MEDI CLICK1
             <img src='/portfolio/images/medi1.jpg'></img>
@@ -134,7 +141,10 @@ function App() {
             MEDI CLICK3
             <img src='/portfolio/images/medi3.png'></img>
           </div>
-          <div onClick={()=>{setModalOpen(true); setProject(6)}}>PORTFOLIO</div>
+          <div onClick={()=>{setModalOpen(true); setProject(6)}}>
+            PORTFOLIO
+            <img src='/portfolio/images/port.png'></img>
+          </div>
         </div>
       </Section>
       <Section bgColor='rgb(253, 253, 253, 0.8)' className='pro-section'>
