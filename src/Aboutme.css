@@ -16,3 +16,17 @@
     height: 25vw;
     border-radius: 50%;
 }
+
+.aboutme-flex > div:first-child{
+    margin-left: 3vw;
+}
+
+.aboutme-flex > div:first-child h4{
+    margin-left: 6vw;
+    margin-top: 1.3vw;
+}
+
+.aboutme-flex > div:first-child h5{
+    margin-left: 6vw;
+    margin-top: 0.8vw; 
+}

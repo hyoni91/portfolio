@@ -135,4 +135,8 @@ a:hover{
   margin-top: 3vw;
 }
 
+.aboutme-content p{
+  font-size: 0.6em;
+}
+
 /* 통통 튀는 애니메이션 예시 */
