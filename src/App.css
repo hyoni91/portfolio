@@ -129,6 +129,9 @@ a:hover{
   color: darkgray;
 }
 
+.myimg{
+  object-fit: cover;
+}
 
 .sliderimg img{
   width: 60vw;

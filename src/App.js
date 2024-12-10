@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import './App.css';
 import './Aboutme.css'
 import './Projects.css'
-import testimage from './images/testimage.jpg';
+import aboutme from './images/aboutme.jpg';
 import ReactModal from 'react-modal';
 import IntroModal from './IntroModal';
 import { Link } from 'react-router-dom';
@@ -88,7 +88,7 @@ function App() {
         </div>
         <div className='aboutme-flex'>
           <div>
-            <img src={testimage}></img>
+            <img className='myimg' src={aboutme}></img>
             <h4></h4>
             <h5>
               <i className="bi bi-github"></i>
