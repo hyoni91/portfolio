@@ -104,14 +104,21 @@ function App() {
             </h5>
           </div>
           <div className='aboutme-content'>
-            <p >　2016年、韓国系企業に入社し、2年間物流業務を担当。<br/>
-                その後、日本と韓国の架け橋になる仕事を目指して韓国語講師として活動。<br/>
-                2020年に沖縄へ移住後、スーパー運営や韓国語講師、翻訳業務を兼務。<br/>
-　              2024年4月からは韓国のプログラミングスクールに通い、<br/>
-                基礎知識を習得しながら3つのプロジェクトを無事に完了。<br/>
-                  　 現在はポートフォリオ作成やブログ執筆を通じて、<br/>
-                  さらなるスキルアップに取り組んでいます。
+            <p>名前: キム・ヒョンギョン<br/>
+            生年月日: 1991.02.03</p>
+            <p>
+            グリーンアカデミー（韓国プログラミングスクール）<br/>
+            過程 : スマートヘルスケアWebサービス開発<br/>
+            学習期間 : 2024年5月21日 ～ 2024年11月4日<br/>
+            学習内容 : <br/>
+            - HTML、CSS、JavaScriptの基礎およびWeb画面の実装<br/>
+            - Javaプログラミングの基礎と実践<br/>
+            - MariaDBを用いたSQLデータベースの基礎知識<br/>
+            - Spring MVCを基盤としたWebプログラミングの実践<br/>
+            - Pythonの基礎
+
             </p>
+
 
           </div>
         </div>
@@ -152,8 +159,9 @@ function App() {
           <h1>CONTACT</h1>
         </div>
         <div>
-          <h4>mail</h4>
-          <h4>tel</h4>
+          <h1>Thank you for watching!</h1>
+          <h4>mail : <a href='hyoni.green@gmail.com'>hyoni.green@gmail.com</a></h4>
+          <h4></h4>
         </div>
       </Section>
       {
