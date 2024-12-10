@@ -35,7 +35,7 @@ const IntroModal = ({intro,setIntro,project})=>{
         detail :
         <>
         2024.08.23 ～ 2024.09.06 <br/>
-        <i class="bi bi-person-circle"></i> リーダー/DB設計/メイン機能＆デザイン <br/>
+        <i className="bi bi-person-circle"></i> リーダー/DB設計/メイン機能＆デザイン <br/>
         <br/>
         - データベース作業 <br/>
         - メインページのデザイン <br/>
@@ -55,7 +55,7 @@ const IntroModal = ({intro,setIntro,project})=>{
         detail :
         <>
             2024.09.09 ～ 2024.09.27 <br/>
-            <i class="bi bi-person-circle"></i> リーダー/デザイン/機能追加 <br/>
+            <i className="bi bi-person-circle"></i> リーダー/デザイン/機能追加 <br/>
             <br/>
             - データベース作業<br/>
             - Raspberry Piを用いた作業<br/>
@@ -74,7 +74,7 @@ const IntroModal = ({intro,setIntro,project})=>{
         detail :
         <>
              2024年9月30日～2024年10月23日 <br/>
-            <i class="bi bi-person-circle"></i> リーダー/DB設計/取引先&受注管理＆在庫管理ページ<br/>
+            <i className="bi bi-person-circle"></i> リーダー/DB設計/取引先&受注管理＆在庫管理ページ<br/>
             <br/>
             - データベース作業<br/>
             - 受注・発注ページのデザイン<br/>
@@ -121,11 +121,11 @@ const IntroModal = ({intro,setIntro,project})=>{
     return(
     <>
         <div>
-            <h4><i class="bi bi-archive"></i> {intro.name}</h4>
+            <h4><i className="bi bi-archive"></i> {intro.name}</h4>
             <p>{intro.content}</p>
             <hr/>
-            <p><i class="bi bi-calendar-week"></i> {intro.detail}</p>
-            <p>動画試演</p>
+            <p><i className="bi bi-calendar-week"></i> {intro.detail}</p>
+            <p><i className="bi bi-camera-reels"></i> 動画試演</p>
         </div>
         {/* <video className="videoTag" controls autoPlay loop>
              <source src={intro.video} type="video/mp4" />

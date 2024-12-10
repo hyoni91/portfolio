@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3,23vw);
     grid-template-rows: 17vw 17vw;
     gap: 10px;
+
 }
 
 .pro-grid img{
@@ -28,7 +29,7 @@
 
 .pro-section{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;       
 }
 
 .pro-section > div:first-child{
@@ -45,6 +46,10 @@
 .modal-wrap{
     display: flex;
     gap: 10px;
+    /* google font */
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .modal-wrap > div:first-child{

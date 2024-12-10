@@ -1,3 +1,6 @@
+
+
+
 .aboutme-flex{
     width: 100%;
     display: flex;
@@ -9,6 +12,11 @@
 .aboutme-flex div{
     /* border: 1px solid black; */
     height: 70vh;
+    /* google font */
+font-family: "Noto Sans JP", sans-serif;
+font-optical-sizing: auto;
+font-weight: 500;
+font-style: normal;
 }
 
 .aboutme-flex img{

@@ -89,15 +89,15 @@ function App() {
         <div className='aboutme-flex'>
           <div>
             <img src={testimage}></img>
-            <h4>KIM HYUNKYUNG</h4>
+            <h4></h4>
             <h5>
-              <i class="bi bi-github"></i>
+              <i className="bi bi-github"></i>
               <a href='https://github.com/hyoni91' target='_blank' rel="noopener noreferrer">
                  hyoni's github
               </a>  
             </h5>
             <h5>
-              <i class="bi bi-chat-heart"></i>
+              <i className="bi bi-chat-heart"></i>
               <a href='https://zenn.dev/hyoni' target='_blank' rel="noopener noreferrer">
                  hyoni's blog
               </a>
@@ -160,7 +160,10 @@ function App() {
         </div>
         <div>
           <h1>Thank you for watching!</h1>
-          <h4>mail : <a href='hyoni.green@gmail.com'>hyoni.green@gmail.com</a></h4>
+          <h4>
+            <i className="bi bi-envelope-paper-heart"></i>
+            <a href='hyoni.green@gmail.com'>hyoni.green@gmail.com</a>
+          </h4>
           <h4></h4>
         </div>
       </Section>
