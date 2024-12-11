@@ -63,13 +63,19 @@
 }
 
 .videoTag{
-    width: 50vw;
+    width: 62vw;
+    margin: auto;
     border: 1px solid lightgrey;
 }
 
 
 /* modal image */
+.sliderimg img{
+    width: 60vw;
+    margin: auto;
+    /* margin-top: 1vw; */
+  }
 
-.image-grid{
-    
+.image-grid p{
+    margin-left: 10px;
 }

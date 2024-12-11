@@ -31,11 +31,11 @@ function App() {
   const [scrollY, setScrollY] = useState(0); // 스크롤 위치 상태
   const [intro, setIntro] = useState({
     name : '',
-    video : '',
     content : ''
   })
   const [project, setProject] = useState()
   const [images, setImages] = useState([]) //이미지들 
+  const [video, setVideo] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -175,6 +175,10 @@ function App() {
             <a href='hyoni.green@gmail.com'>hyoni.green@gmail.com</a>
           </h4>
           <h4></h4>
+          <video className="videoTag" controls autoPlay loop>
+          <source src='/videos/bookstore.mp4' type='video' />
+          このブラウザは動画再生に対応していません。
+          </video>
         </div>
       </Section>
       {
@@ -182,7 +186,7 @@ function App() {
         <ReactModal
         isOpen={true}
             ariaHideApp={false}
-            onRequestClose={() => {setModalOpen(false)}}
+            onRequestClose={() => {setModalOpen(false); setVideo(false)}}
             style={{
               overlay: {
                 position: 'fixed',
@@ -215,7 +219,7 @@ function App() {
                 <IntroModal intro={intro} setIntro={setIntro} project={project}/>
                 </div>
                 <div>
-                <ImageModal images={images} setImages={setImages} project={project}/>
+                <ImageModal images={images} setImages={setImages} project={project} video={video} setVideo={setVideo}/>
                 </div>
               </div>
 

@@ -4,13 +4,11 @@ const IntroModal = ({intro,setIntro,project})=>{
 
     const project1 = {
         name : 'TODO LIST',
-        video : '',
         content : '今日のやることや目標を設定して管理できます。また、カレンダーを使ってスケジュール管理や誕生日、記念日などを入れられます。'
     }
 
     const project2 = {
         name : 'BOOK STORE',
-        video : '',
         content : 'BOOK STOREでは、本をカテゴリ別に分類して確認できます。お気に入りの本はカゴに入れられます。MyCartでは数量変更や削除などのもできます。ADMINの場合、本の詳細ページや登録、会員に関連する情報も確認できます。',
         detail : 
             <>
@@ -30,7 +28,6 @@ const IntroModal = ({intro,setIntro,project})=>{
 
     const project3 = {
         name : '病院予約',
-        video : '/videos/mediclick1.mp4',
         content : '病院のホームページをログインすると予約ができます。診療科と日付を選択するとリアルタイムで予約が可能な時間帯を確認できます。予約ができない場合は該当の時間帯の選択ができず、グレーの色で表示されます。今日と過去の日付は選択できません。もし、アカウントがない場合は会員登録もできます。',
         detail :
         <>
@@ -50,7 +47,6 @@ const IntroModal = ({intro,setIntro,project})=>{
 
     const project4 = {
         name : 'リアルタイム温度管理',
-        video : '',
         content : 'Raspberry Piを使用してリアルタイムで温度を取得し、病院管理者用のダッシュボードを視覚的に実装しました。危険温度を超えた場合、アラートが表示され、テーブル内のアイコンの色が変わるように設計されています。',
         detail :
         <>
@@ -69,7 +65,6 @@ const IntroModal = ({intro,setIntro,project})=>{
 
     const project5 = {
         name : '受注システム管理',
-        video : '',
         content : '病院側（取引先）からの注文を受けた後、受注状況を管理し、在庫および配送まで処理できるように実装しました。',
         detail :
         <>
@@ -89,7 +84,6 @@ const IntroModal = ({intro,setIntro,project})=>{
 
     const project6 = {
         name : 'PORTFOLIOサイト',
-        video : '',
         content : '今まで取り組んだプロジェクトをまとめたサイトです。こちらでは、プロジェクトの内容と機能の説明、動画試演などを確認できます。',
         detail : 
         <>
@@ -125,7 +119,6 @@ const IntroModal = ({intro,setIntro,project})=>{
             <p>{intro.content}</p>
             <hr/>
             <p><i className="bi bi-calendar-week"></i> {intro.detail}</p>
-            <p><i className="bi bi-camera-reels"></i> 動画試演</p>
         </div>
         {/* <video className="videoTag" controls autoPlay loop>
              <source src={intro.video} type="video/mp4" />

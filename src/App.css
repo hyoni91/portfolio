@@ -133,14 +133,14 @@ a:hover{
   object-fit: cover;
 }
 
-.sliderimg img{
-  width: 60vw;
-  margin: auto;
-  margin-top: 3vw;
-}
+
 
 .aboutme-content p{
   font-size: 0.6em;
+}
+
+span{
+  cursor: pointer;
 }
 
 /* 통통 튀는 애니메이션 예시 */

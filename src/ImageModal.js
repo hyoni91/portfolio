@@ -1,13 +1,10 @@
-import './Projects.css'
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 import { useEffect, useState } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import './Projects.css';
 
-const ImageModal = ({images,setImages,project})=>{
-
-    const [videos,setVideos] = useState(false)
-
+const ImageModal = ({images,setImages,project, video, setVideo})=>{
     const settings = {
         dots: true,
         infinite: true,
@@ -16,7 +13,30 @@ const ImageModal = ({images,setImages,project})=>{
         slidesToScroll: 1,
         arrow: true,
       };
+
+    const [videos, setVideos] = useState(null)        
+  
+    useEffect(()=>{
+    console.log(project)
+
+    switch(project){
+        case 1 : setVideos('/portfolio/videos/bookstore.mp4')
+        break;
+        case 2 : setVideos('/portfolio/videos/bookstore.mp4')
+        break;
+        case 3 : setVideos('/portfolio/videos/mediclick1.mp4')
+        break;
+        case 4 : setVideos('/portfolio/videos/medi2.mp4')
+        break;
+        case 5 : setVideos('/portfolio/videos/medi3.mp4')
+        break;
+        case 6 : setVideos('/portfolio/videos/bookstore.mp4')
+    }
+    },[setVideos, project, setVideo])
     
+      console.log('Current video path:', videos);
+
+
       useEffect(()=>{
         switch(project){
             case 1 : setImages(
@@ -29,6 +49,7 @@ const ImageModal = ({images,setImages,project})=>{
                     '/portfolio/images/bookshop6.jpg'
                 ]
             )
+            
                 break;
             case 2 : setImages(
                 [
@@ -91,23 +112,31 @@ const ImageModal = ({images,setImages,project})=>{
     return(
         <div className="image-grid">
             {
-                videos? 
-                <video className="videoTag" controls autoPlay loop>
-                {/* <source src={intro.video} type="video/mp4" /> */}
-                このブラウザは動画再生に対応していません。
-                </video>
+                video?
+                <>
+                    <p><span onClick={(e)=>{setVideo(false)}}><i className="bi bi-image"></i> 画面に戻る</span></p>
+                    <video className="videoTag" controls autoPlay loop>
+                    <source src={videos} type='video' />
+                    このブラウザは動画再生に対応していません。
+                    </video>
+
+                </>
                 :
-                <Slider {...settings}>
-                    {
-                        images.map((img,i)=>{
-                            return(
-                                <div className="sliderimg" key={i}>
-                                <img src={img} alt={`project-${project}-image-${i}`} />
-                              </div>
-                            )
-                        })
-                    }
-                </Slider>
+                <>
+                    <p><span onClick={(e)=>{setVideo(true)}}><i className="bi bi-camera-reels"></i> 動画試演</span></p>
+
+                    <Slider {...settings}>
+                        {
+                            images.map((img,i)=>{
+                                return(
+                                    <div className="sliderimg" key={i}>
+                                    <img src={img} alt={`project-${project}-image-${i}`} />
+                                </div>
+                                )
+                            })
+                        }
+                    </Slider>
+                </>
             }
   
   
