@@ -143,4 +143,45 @@ span{
   cursor: pointer;
 }
 
-/* 통통 튀는 애니메이션 예시 */
+.contact-content{
+  font-size: 0.5em;
+  margin: 20px 0px;
+}
+
+.mail-content{
+  text-align: left;
+}
+
+.mail-content label{
+  font-size: 0.7em;
+  font-weight: 600;
+  margin: 0px;
+
+}
+
+.mail-content input{
+  width: 30vw;
+  margin-bottom: 10px;
+  font-size: 0.6em;
+  padding: 12px;
+  outline: none;
+}
+
+textarea{
+  height: 20vh;
+  width: 30vw;
+  padding: 12px;
+  font-size: 0.6em;
+  resize: none;
+  outline: none;
+
+}
+
+.mail-btn {
+  margin-top: 6px;
+  width: 30vw;
+  border: none;
+  background-color: darkolivegreen;
+  color: white;
+  cursor: pointer;
+}

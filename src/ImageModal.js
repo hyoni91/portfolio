@@ -14,7 +14,7 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
         arrow: true,
       };
 
-    const [videos, setVideos] = useState(null)        
+    const [videos, setVideos] = useState('')        
   
     useEffect(()=>{
     console.log(project)
@@ -34,8 +34,6 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
     }
     },[setVideos, project, setVideo])
     
-      console.log('Current video path:', videos);
-
 
       useEffect(()=>{
         switch(project){
@@ -114,16 +112,31 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
             {
                 video?
                 <>
-                    <p><span onClick={(e)=>{setVideo(false)}}><i className="bi bi-image"></i> 画面に戻る</span></p>
+                    <p>
+                        <span onClick={(e)=>{setVideo(false)}}>
+                            <i className="bi bi-image"></i> 
+                            画面に戻る
+                        </span>
+                    </p>
                     <video className="videoTag" controls autoPlay loop>
-                    <source src={videos} type='video' />
+                    {videos ? (
+                        <source src={videos} type="video/mp4" />
+                    ) : (
+                        <p>...</p>
+                    )}
                     このブラウザは動画再生に対応していません。
                     </video>
+
 
                 </>
                 :
                 <>
-                    <p><span onClick={(e)=>{setVideo(true)}}><i className="bi bi-camera-reels"></i> 動画試演</span></p>
+                    <p >
+                        <span onClick={(e)=>{setVideo(true)}}>
+                         <i className="bi bi-camera-reels"></i> 
+                            動画試演
+                        </span>
+                    </p>
 
                     <Slider {...settings}>
                         {

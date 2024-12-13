@@ -9,8 +9,10 @@ import IntroModal from './IntroModal';
 import { Link } from 'react-router-dom';
 import ImageModal from './ImageModal';
 // import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import emailjs from '@emailjs/browser';
+
 
 
 const Section = styled.div`
@@ -26,6 +28,28 @@ const Section = styled.div`
 `;
 
 function App() {
+  // email
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_08qlxca', 'template_4io7fxn', form.current, {
+        publicKey: process.env.REACT_APP_JS_KEY
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+  };
+
+
+
   const h1 = useRef();
   const ul = useRef();  
   const [scrollY, setScrollY] = useState(0); // 스크롤 위치 상태
@@ -166,19 +190,28 @@ function App() {
       </Section>
       <Section bgColor='rgb(253, 253, 253, 0.8)' className='pro-section'>
         <div className='pro-div'>
-          <h1>CONTACT</h1>
+          <h1>CONTACT ME</h1>
         </div>
         <div>
           <h1>Thank you for watching!</h1>
-          <h4>
+          <div className='contact-content'>
+          ポートフォリオをご覧いただき、ありがとうございます。<br/>
+          新しい環境で学び続け、さらなるスキルアップを目指しています。<br/>
+          どうぞよろしくお願いします。
+          </div>
+          <form ref={form} onSubmit={sendEmail} className='mail-content'>
+             <label>NAME</label> <br/>
+             <input type="text" name="name" /><br/> 
+             <label>EMAIL</label><br/>
+             <input type="email" name="email" /><br/>
+             <label>MESSAGE</label><br/>
+             <textarea name="message" /><br/>
+             <input className='mail-btn' type="submit" value="SEND" />     
+           </form>
+          {/* <h4>
             <i className="bi bi-envelope-paper-heart"></i>
             <a href='hyoni.green@gmail.com'>hyoni.green@gmail.com</a>
-          </h4>
-          <h4></h4>
-          <video className="videoTag" controls autoPlay loop>
-          <source src='/videos/bookstore.mp4' type='video' />
-          このブラウザは動画再生に対応していません。
-          </video>
+          </h4> */}
         </div>
       </Section>
       {
