@@ -20,7 +20,7 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
     console.log(project)
 
     switch(project){
-        case 1 : setVideos('/portfolio/videos/bookstore.mp4')
+        case 1 : setVideos('/portfolio/videos/todo.mp4')
         break;
         case 2 : setVideos('/portfolio/videos/bookstore.mp4')
         break;
@@ -39,12 +39,10 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
         switch(project){
             case 1 : setImages(
                 [
-                    '/portfolio/images/bookshop1.jpg', 
-                    '/portfolio/images/bookshop2.jpg',
-                    '/portfolio/images/bookshop3.jpg',
-                    '/portfolio/images/bookshop4.jpg',
-                    '/portfolio/images/bookshop5.jpg',
-                    '/portfolio/images/bookshop6.jpg'
+                    '/portfolio/images/todo1.png', 
+                    '/portfolio/images/todo2.png',
+                    '/portfolio/images/todo3.png',
+                    '/portfolio/images/todo4.png'
                 ]
             )
             
@@ -94,12 +92,10 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
                 break;
             case 6 : setImages(
                 [
-                    '/portfolio/images/bookshop1.jpg', 
-                    '/portfolio/images/bookshop2.jpg',
-                    '/portfolio/images/bookshop3.jpg',
-                    '/portfolio/images/bookshop4.jpg',
-                    '/portfolio/images/bookshop5.jpg',
-                    '/portfolio/images/bookshop6.jpg'
+                    '/portfolio/images/pof1.png', 
+                    '/portfolio/images/pof2.png',
+                    '/portfolio/images/pof3.png',
+                    '/portfolio/images/pof4.png'
                 ]
             )
             

@@ -12,6 +12,8 @@ const IntroModal = ({intro,setIntro,project})=>{
                 - レイアウト設計<br/>
                 - デザイン<br/>
                 − 機能実装<br/>
+
+                DateやlocalStorage,sessionStorageの理解を深めるために作成しました。
                 </>
     }
 
