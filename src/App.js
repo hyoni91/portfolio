@@ -41,13 +41,14 @@ function App() {
       .then(
         () => {
           console.log('SUCCESS!');
+          alert('メッセージを送りました☺️');
+          window.location.reload();
         },
         (error) => {
           console.log('FAILED...', error);
         },
       );
   };
-
 
 
   const h1 = useRef();

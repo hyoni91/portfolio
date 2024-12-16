@@ -30,7 +30,7 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
         break;
         case 5 : setVideos('/portfolio/videos/medi3.mp4')
         break;
-        case 6 : setVideos('/portfolio/videos/bookstore.mp4')
+        case 6 : setVideos('/portfolio/videos/prt.mp4')
     }
     },[setVideos, project, setVideo])
     
