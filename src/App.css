@@ -10,8 +10,9 @@ html, body {
   margin: 0;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-
+  scroll-padding: 50px; /* 스크롤 시작 지점 보정 */
 }
+
 
 .wrap{
   background: url('https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') fixed;
@@ -51,35 +52,21 @@ h1.visible, ul.visible {
   width: 100%;
   justify-content:flex-start;
 }
-
-/* .main-ul-div{
-  display: flex;
-} */
-/* 
-ul {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 15px;
-  font-size: 0.7em;
+h1 {
+  font-size: calc(5vw + 1em);
 }
 
-li {
-  padding: 4px;
-  cursor: pointer;
-  color: white;
-  width: 5em;
-  font-weight: 800;
-  text-shadow: 1px 1px 1px black;
+@media (max-width: 768px) {
+  h1 {
+      font-size: calc(4vw + 1em);
+  }
 }
 
-li:hover {
-  font-weight: 800;
-} */
-
+@media (max-width: 480px) {
+  h1 {
+      font-size: calc(3vw + 1em);
+  }
+}
 
 /* 반응형 디자인을 위한 미디어 쿼리 추가 */
 @media (max-width: 768px) {
@@ -94,28 +81,12 @@ li:hover {
     margin-left: 0;
   }
 
-  /* ul {
-    font-size: 1em;
-    gap: 10px;
-  }
-
-  li {
-    font-size: 0.9em;
-  } */
 }
 
 @media (max-width: 480px) {
   .main h1 {
     font-size: 6vw;
   }
-/* 
-  ul {
-    font-size: 1em;
-  }
-
-  li {
-    font-size: 0.5em;
-  } */
 }
 
 a{
@@ -127,12 +98,13 @@ a{
 
 a:hover{
   color: darkgray;
+  text-decoration: underline;
+
 }
 
 .myimg{
   object-fit: cover;
 }
-
 
 
 .aboutme-content p{
@@ -144,23 +116,24 @@ span{
 }
 
 .contact-content{
-  font-size: 0.5em;
+  font-size: 1.2vw;
   margin: 20px 0px;
 }
 
 .mail-content{
   text-align: left;
+  /* border: 1px solid; */
 }
 
 .mail-content label{
-  font-size: 0.7em;
+  font-size: 1.6vw;
   font-weight: 600;
   margin: 0px;
 
 }
 
 .mail-content input{
-  width: 30vw;
+  width: 100%;
   margin-bottom: 10px;
   font-size: 0.6em;
   padding: 12px;
@@ -168,20 +141,25 @@ span{
 }
 
 textarea{
-  height: 20vh;
-  width: 30vw;
+  height: 25vh;
+  width: 100%;
   padding: 12px;
-  font-size: 0.6em;
+  font-size: 1vw;
   resize: none;
   outline: none;
 
 }
 
 .mail-btn {
-  margin-top: 6px;
-  width: 30vw;
+  margin-top: 1vw;
   border: none;
   background-color: darkolivegreen;
   color: white;
   cursor: pointer;
 }
+
+.mail-btn:hover{
+  background-color: rgb(75, 94, 45);
+}
+
+

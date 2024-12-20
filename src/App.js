@@ -21,9 +21,7 @@ const Section = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 2em;
-  background:  ${(props) => props.bgColor ? props.bgColor : null
-    // 'linear-gradient(#e66465, #9198e5);'
-      
+  background:  ${(props) => props.bgColor ? props.bgColor : null      
     }
 `;
 
@@ -96,13 +94,7 @@ function App() {
     <div className='wrap'>
       <Section >
         <div className="main">
-          <div className='main-ul-div'>
-              {/* <ul ref={ul}>
-                <li>about me</li>
-                <li>projects</li>
-                <li>contact</li>
-              </ul> */}
-            </div>
+
           <h1 ref={h1}>WELCOME<br />I'M HYONI</h1>    
         </div>
       </Section>
@@ -194,7 +186,7 @@ function App() {
           <h1>CONTACT ME</h1>
         </div>
         <div>
-          <h1>Thank you for watching!</h1>
+          <h2>Thank you for watching!</h2>
           <div className='contact-content'>
           ポートフォリオをご覧いただき、ありがとうございます。<br/>
           新しい環境で学び続け、さらなるスキルアップを目指しています。<br/>
@@ -209,10 +201,6 @@ function App() {
              <textarea name="message" /><br/>
              <input className='mail-btn' type="submit" value="SEND" />     
            </form>
-          {/* <h4>
-            <i className="bi bi-envelope-paper-heart"></i>
-            <a href='hyoni.green@gmail.com'>hyoni.green@gmail.com</a>
-          </h4> */}
         </div>
       </Section>
       {

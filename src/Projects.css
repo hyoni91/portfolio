@@ -39,7 +39,6 @@
 
 .pro-section h1{
     font-size: 1.2em;
-    /* text-shadow: 2px 2px 1px  whitesmoke ; */
 
 }
 
@@ -81,3 +80,33 @@
     margin-left: 10px;
 }
 
+@media (max-width: 768px) {
+    .pro-grid {
+        grid-template-columns: repeat(2, 45vw);
+        grid-template-rows: auto;
+        gap: 5px;
+    }
+
+    .pro-grid img {
+        width: 40vw;
+        height: auto;
+    }
+
+    .modal-wrap {
+        flex-direction: column;
+    }
+
+    .modal-wrap > div:first-child, 
+    .modal-wrap > div:last-child {
+        width: 100%;
+    }
+
+    .videoTag {
+        width: 90vw;
+        height: auto;
+    }
+
+    .sliderimg img {
+        width: 90vw;
+    }
+}
