@@ -92,21 +92,33 @@ function App() {
 
   return (
     <div className='wrap'>
-      <Section >
+      {/* Fixed Navigation Bar */}
+      <nav className="fixed-navbar">
+        <ul>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <Section id='main'>
         <div className="main">
 
           <h1 ref={h1}>WELCOME<br />I'M HYONI</h1>    
         </div>
       </Section>
 
-      <Section bgColor='rgb(253, 253, 253, 0.8)' className='pro-section' >
+      <Section id='about' bgColor='rgb(253, 253, 253, 0.8)' className='pro-section' >
         <div className='pro-div'>
           <h1>ABOUT ME</h1>
         </div>
         <div className='aboutme-flex'>
           <div>
             <img className='myimg' src={aboutme}></img>
-            <h4></h4>
+            <h4> 
+              <p>KIM HYUNKYUNG<br/>
+                1991.02.03</p>
+            </h4>
             <h5>
               <i className="bi bi-github"></i>
               <a href='https://github.com/hyoni91' target='_blank' rel="noopener noreferrer">
@@ -114,28 +126,50 @@ function App() {
               </a>  
             </h5>
             <h5>
+ 
               <i className="bi bi-chat-heart"></i>
               <a href='https://zenn.dev/hyoni' target='_blank' rel="noopener noreferrer">
                  hyoni's blog
               </a>
+      
             </h5>
           </div>
           <div className='aboutme-content'>
-            <p>名前: キム・ヒョンギョン<br/>
-            生年月日: 1991.02.03</p>
+            <h3>修了内容</h3>
+           
             <p>
             グリーンアカデミー（韓国プログラミングスクール）<br/>
             過程 : スマートヘルスケアWebサービス開発<br/>
             学習期間 : 2024年5月21日 ～ 2024年11月4日<br/>
-            学習内容 : <br/>
+            チーム開発<br/>
+            ・病院リアルタイム診療予約機能の実装<br/>
+            ・医療管理機器(温度)自動モニタリングダッシュボード<br/>
+            ・供給業者視点の医療用品受注プロセス実装<br/>
+            {/* 学習内容 : <br/>
             - HTML、CSS、JavaScriptの基礎およびWeb画面の実装<br/>
             - Javaプログラミングの基礎と実践<br/>
             - MariaDBを用いたSQLデータベースの基礎知識<br/>
             - Spring MVCを基盤としたWebプログラミングの実践<br/>
-            - Pythonの基礎
+            - Pythonの基礎 */}
             </p>
             <hr/>
             <p>
+            <h5>プログラミング言語・フレームワーク</h5>
+            #React
+            #Java
+            #Spring Boot
+            <h5>データベース</h5>
+            #MariaDB
+            <h5>開発ツール</h5>
+            #VS Code
+            #IntelliJ IDEA<br/>
+            <h5>バージョン管理</h5>
+            #GitHub
+
+            Backend
+            </p>
+            {/* <hr/> */}
+            {/* <p>
               【自己PR】<br/>
               　2016年、韓国系企業に入社し、2年間物流業務を担当。<br/>
               その後、日本と韓国の架け橋になる仕事を目指して韓国語講師として活動。<br/>
@@ -144,13 +178,13 @@ function App() {
               基礎知識を習得しながら3つのプロジェクトを無事に完了。<br/>
               現在はポートフォリオ作成やブログ執筆を通じて、<br/>
               さらなるスキルアップに取り組んでいます。<br/>
-            </p>
+            </p> */}
 
 
           </div>
         </div>
       </Section>
-      <Section className='pro-section'>
+      <Section id='projects' className='pro-section'>
         <div className='pro-div'>
           <h1>PROJECTS</h1>
         </div>
@@ -181,7 +215,7 @@ function App() {
           </div>
         </div>
       </Section>
-      <Section bgColor='rgb(253, 253, 253, 0.8)' className='pro-section'>
+      <Section id='contact' bgColor='rgb(253, 253, 253, 0.8)' className='pro-section'>
         <div className='pro-div'>
           <h1>CONTACT ME</h1>
         </div>
