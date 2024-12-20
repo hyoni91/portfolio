@@ -4,22 +4,34 @@ const IntroModal = ({intro,setIntro,project})=>{
 
     const project1 = {
         name : 'TODO LIST',
-        content : '今日のやることや目標を設定して管理できます。また、カレンダーを使ってスケジュール管理や誕生日、記念日などを入れられます。',
+        content : 
+        <>
+        今日のやることや目標をsessionStorageに入れて管理できます。<br/>
+        また、カレンダーを使ってスケジュールや誕生日、記念日なども入れられます。<br/>
+        日程がある日はアイコンが表示されるます。<br/>
+        本プロジェクトはカレンダーとsessionStorage,checkboxの理解を深めるために作成しました。
+
+        </>,
         detail : 
                 <>
                 2024.11.6~2024.11.10<br/>
                 <br/>
                 - レイアウト設計<br/>
+                - 機能実装<br/>
                 - デザイン<br/>
-                − 機能実装<br/>
-
-                DateやlocalStorage,sessionStorageの理解を深めるために作成しました。
+                - 機能テスト
                 </>
     }
 
     const project2 = {
         name : 'BOOK STORE',
-        content : 'BOOK STOREでは、本をカテゴリ別に分類して確認できます。お気に入りの本はカゴに入れられます。MyCartでは数量変更や削除などのもできます。ADMINの場合、本の詳細ページや登録、会員に関連する情報も確認できます。',
+        content : 
+        <>
+        BOOK STOREでは、本をカテゴリ別に分類して確認できます。<br/>
+        お気に入りの本はカゴに入れてカゴの詳細ページで数量変更や削除などのもできます。<br/>
+        ADMINの場合、本の詳細ページや登録、会員に関連する情報も確認できます。<br/>
+        本プロジェクトはサーバーとフロント、両方の機能を使って作成しました。
+        </>,
         detail : 
             <>
             2024.07.20 ~ 2024.08.20 <br/>
@@ -126,7 +138,13 @@ const IntroModal = ({intro,setIntro,project})=>{
     return(
     <>
         <div>
-            <h4><i className="bi bi-archive"></i> {intro.name}</h4>
+            <h4 >
+                <i className="bi bi-archive"></i> 
+                <span className="intro-title">
+                {intro.name}
+                </span>
+                
+            </h4>
             <p>{intro.content}</p>
             <hr/>
             <p><i className="bi bi-calendar-week"></i> {intro.detail}</p>
