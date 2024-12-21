@@ -52,10 +52,7 @@ function App() {
   const h1 = useRef();
   const ul = useRef();  
   const [scrollY, setScrollY] = useState(0); // 스크롤 위치 상태
-  const [intro, setIntro] = useState({
-    name : '',
-    content : ''
-  })
+  const [intro, setIntro] = useState({ })
   const [project, setProject] = useState()
   const [images, setImages] = useState([]) //이미지들 
   const [video, setVideo] = useState(false)

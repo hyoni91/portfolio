@@ -44,26 +44,29 @@
 
 .modal-wrap{
     display: flex;
-    gap: 10px;
+    /* border: 1px solid red; */
     /* google font */
-    font-family: "Noto Sans JP", sans-serif;
+
     font-optical-sizing: auto;
     font-style: normal;
 }
 
 .modal-wrap > div:first-child{
-    width: 36vw;
+    width: 40vw;
     /* border: 1px solid red; */
 }
 
 .modal-wrap > div:last-child{
-    width: 61vw;
+    width: 50vw;
+    margin-left: 10px;
+    margin-top: 5vw;
     /* border: 1px solid red; */
+    margin: auto;
 }
 
 .videoTag{
-    width: 62vw;
-    height: 58vh;
+    width: 50vw;
+    height: 48vh;
     margin: auto;
     border: 1px solid lightgrey;
 }
@@ -71,7 +74,7 @@
 
 /* modal image */
 .sliderimg img{
-    width: 60vw;
+    width: 50vw;
     margin: auto;
     /* margin-top: 1vw; */
   }
@@ -79,6 +82,49 @@
 .image-grid p{
     margin-left: 10px;
 }
+
+
+/* poject setumei */
+
+.intro-title{
+    /* border-bottom: 2px double darkgray; */
+    margin-left: 3px;
+}
+
+.intro-flex{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    padding: 3px;
+}
+
+.intro-flex div:first-child{
+    height: 30vh;
+}
+
+.intro-flex div:nth-child(2){
+    height: 30vh; 
+}
+
+.intro-flex div:last-child{
+    height: 5vh;
+    margin-top: 10px;
+}
+
+.link-div a,
+.url-null{
+    border-bottom: 1px solid;
+    color: darkblue;
+    border: none;
+}
+
+.link-div a:hover
+.url-null:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+
 
 @media (max-width: 768px) {
     .pro-grid {
@@ -109,13 +155,13 @@
     .sliderimg img {
         width: 90vw;
     }
+    .intro-flex {
+        letter-spacing: 1px; /* 작은 화면에서는 간격 줄이기 */
+    }
 }
 
-
-
-/* poject setumei */
-
-.intro-title{
-    border-bottom: 2px double darkgray;
-    margin-left: 3px;
+@media (max-width: 480px) {
+    .intro-flex {
+        letter-spacing: 0.5px; /* 더 작은 화면에서는 더 줄이기 */
+    }
 }
