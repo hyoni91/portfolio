@@ -1,73 +1,59 @@
-.aboutme-flex{
-    width: 100%;
+.pro-section {
     display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    padding: 10px;
+    position: relative; 
+  }
+  
+  .pro-div h1 {
+    font-weight: 800;
+    font-family: 'Danjo-bold-Regular';
+    font-size: 2rem; 
+    line-height: 1.5;
+    display: inline-block;
+  }
+
+
+  .pro-div {
+    display: flex;
+    justify-content: center; 
     align-items: center;
-    gap: 20px;
-    justify-content: space-evenly;
-}
-
-.aboutme-flex div{
-    height: 70vh;
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.aboutme-flex img{
+    width: 100%;
     margin: auto;
-    width: 25vw;
-    height: 25vw;
-    border-radius: 50%;
+    margin-top: 5vw;
+  }
+  
+
+.aboutme-content{
+    width: 80%;
+    display: flex;
+    gap: 10vw;
 }
 
-
-
-.aboutme-flex > div:first-child h4 {
-    margin-top: 1.3vw;
+.myimg{
+    width: 35vw;
+    margin-top: 3vw;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.19), 0 6px 10px rgba(0,0,0,0.23);
 }
 
-.aboutme-flex > div:first-child h5 {
-    margin-top: 0.8vw;
+.aboutme-left{
+    width: 100vw;
+    height: 75vh;
+    text-align: center;
+    /* display: flex;
+    justify-self: center;
+    align-items: center; */
+    background-color:#DDD3C1;
 }
 
-
-.aboutme-flex > div:first-child{
-    margin-left: 3vw;
+.aboutme-left div{
+    font-size: 0.8em;
 }
 
-.aboutme-flex > div:first-child h4, 
-.aboutme-flex > div:first-child h5 {
-    margin-left: 6vw;
-}
-
-.aboutme-flex > div:first-child h4{
-    margin-top: 1.3vw;
-}
-
-.aboutme-flex > div:first-child h5{
-    margin-top: 0.8vw; 
-}
-
-.aboutme-content > p{
-    font-size: 1.4vw;
-}
-
-@media (max-width: 768px) {
-    .aboutme-flex {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .aboutme-flex img {
-        width: 40vw;
-        height: 40vw;
-
-    }
-
-    .aboutme-flex div {
-        height: auto;
-
-    }
-
+.aboutme-rigth{
+    border: 1px solid blueviolet;
+    width: 50vw;
+    height: 75vh;
 }

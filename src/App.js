@@ -92,15 +92,14 @@ function App() {
       {/* Fixed Navigation Bar */}
       <nav className="fixed-navbar">
         <ul>
-          <li><a href="#main">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#main">HOME</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT ME</a></li>
         </ul>
       </nav>
       <Section id='main'>
         <div className="main">
-
           <h1 ref={h1}>WELCOME<br />I'M HYONI</h1>    
         </div>
       </Section>
@@ -109,75 +108,33 @@ function App() {
         <div className='pro-div'>
           <h1>ABOUT ME</h1>
         </div>
-        <div className='aboutme-flex'>
-          <div>
-            <img className='myimg' src={aboutme}></img>
-            <h4> 
-              <p>KIM HYUNKYUNG<br/>
-                1991.02.03</p>
-            </h4>
-            <h5>
-              <i className="bi bi-github"></i>
-              <a href='https://github.com/hyoni91' target='_blank' rel="noopener noreferrer">
-                 hyoni's github
-              </a>  
-            </h5>
-            <h5>
- 
-              <i className="bi bi-chat-heart"></i>
-              <a href='https://zenn.dev/hyoni' target='_blank' rel="noopener noreferrer">
-                 hyoni's blog
-              </a>
-      
-            </h5>
-          </div>
-          <div className='aboutme-content'>
-            <h3>修了内容</h3>
-           
-            <p>
-            グリーンアカデミー（韓国プログラミングスクール）<br/>
-            過程 : スマートヘルスケアWebサービス開発<br/>
-            学習期間 : 2024年5月21日 ～ 2024年11月4日<br/>
-            チーム開発<br/>
-            ・病院リアルタイム診療予約機能の実装<br/>
-            ・医療管理機器(温度)自動モニタリングダッシュボード<br/>
-            ・供給業者視点の医療用品受注プロセス実装<br/>
-            {/* 学習内容 : <br/>
-            - HTML、CSS、JavaScriptの基礎およびWeb画面の実装<br/>
-            - Javaプログラミングの基礎と実践<br/>
-            - MariaDBを用いたSQLデータベースの基礎知識<br/>
-            - Spring MVCを基盤としたWebプログラミングの実践<br/>
-            - Pythonの基礎 */}
-            </p>
-            <hr/>
-            <p>
-            <h5>プログラミング言語・フレームワーク</h5>
-            #React
-            #Java
-            #Spring Boot
-            <h5>データベース</h5>
-            #MariaDB
-            <h5>開発ツール</h5>
-            #VS Code
-            #IntelliJ IDEA<br/>
-            <h5>バージョン管理</h5>
-            #GitHub
-
-            Backend
-            </p>
-            {/* <hr/> */}
-            {/* <p>
-              【自己PR】<br/>
-              　2016年、韓国系企業に入社し、2年間物流業務を担当。<br/>
-              その後、日本と韓国の架け橋になる仕事を目指して韓国語講師として活動。<br/>
-              2020年に沖縄へ移住後、スーパー運営や韓国語講師、翻訳業務を兼務。<br/>
-              　2024年4月からは韓国のプログラミングスクールに通い、<br/>
-              基礎知識を習得しながら3つのプロジェクトを無事に完了。<br/>
-              現在はポートフォリオ作成やブログ執筆を通じて、<br/>
-              さらなるスキルアップに取り組んでいます。<br/>
-            </p> */}
-
-
+        <div className='aboutme-content'>
+          <div className='aboutme-left'>
+            <div>
+              <img className='myimg' src={aboutme}></img>             
+            </div>
+              <div>
+                <div>
+                     KIM HYUNKYUNG
+                </div>
+                <div>
+                    <i className="bi bi-github"></i>
+                    <a href='https://github.com/hyoni91' target='_blank' rel="noopener noreferrer">
+                      hyoni's github
+                    </a>  
+                  </div>
+                  <div>
+                    <i className="bi bi-chat-heart"></i>
+                    <a href='https://zenn.dev/hyoni' target='_blank' rel="noopener noreferrer">
+                      hyoni's blog
+                    </a>
+                  </div>
+              </div>
+            </div>  
+          <div className='aboutme-rigth'>
+            <div>  
+              content         
+            </div>
           </div>
         </div>
       </Section>

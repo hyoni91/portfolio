@@ -27,20 +27,9 @@
     transition: 0.3s;
 }
 
-.pro-section{
-    display: flex;
-    flex-direction: column;       
-}
 
-.pro-section > div:first-child{
-    align-self: self-start;
-    margin-left: 20px;
-}
 
-.pro-section h1{
-    font-size: 1.2em;
 
-}
 
 .modal-wrap{
     display: flex;
