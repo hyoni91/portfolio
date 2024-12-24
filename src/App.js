@@ -104,36 +104,68 @@ function App() {
         </div>
       </Section>
 
-      <Section id='about' bgColor='rgb(253, 253, 253, 0.8)' className='pro-section' >
+      <Section id='about' bgColor='rgb(255, 255, 255, 1)' className='pro-section' >
         <div className='pro-div'>
           <h1>ABOUT ME</h1>
         </div>
         <div className='aboutme-content'>
           <div className='aboutme-left'>
             <div>
-              <img className='myimg' src={aboutme}></img>             
+              <img className='myimg' src={aboutme}></img>
+              <div id='name1'>KIM HYUNKYUNG</div> 
+              <div id='name2'>#1991.02.03</div>            
             </div>
-              <div>
+              <div className='whoami'>
+                <h3>Who am I</h3>
                 <div>
-                     KIM HYUNKYUNG
+                  エンジニアとして第一歩踏み出したばかりのキムヒョンギョンです。
+                  こちらのサイトでは、ユーザー様が使いやすいウェブサイトを作るために
+                  色々工夫して作り上げたプロジェクトを紹介ております。
+                  まだまだな技術ですが、どうか優しい目でご覧ください☺️
                 </div>
                 <div>
-                    <i className="bi bi-github"></i>
-                    <a href='https://github.com/hyoni91' target='_blank' rel="noopener noreferrer">
-                      hyoni's github
-                    </a>  
-                  </div>
-                  <div>
-                    <i className="bi bi-chat-heart"></i>
-                    <a href='https://zenn.dev/hyoni' target='_blank' rel="noopener noreferrer">
-                      hyoni's blog
-                    </a>
-                  </div>
+                  <a href='https://github.com/hyoni91' target='_blank' rel="noopener noreferrer">
+                  <i className="bi bi-github"></i>
+                  </a>  
+                  <a href='https://zenn.dev/hyoni' target='_blank' rel="noopener noreferrer">
+                  <i className="bi bi-chat-heart"></i>
+                </a>
+                </div>
+         
               </div>
             </div>  
           <div className='aboutme-rigth'>
             <div>  
-              content         
+              <h3>Learning Journey</h3>
+              <div className='learn'>
+                  スクール名:グリーンアカデミー（韓国）<br/>
+                  課程:スマートヘルスケアWebサービス開発(6ヶ月)<br/>
+                  【学習内容】<br/>
+                  - HTML、CSS、JavaScriptの基礎およびWeb画面の実装<br/>
+                  - Javaプログラミングの基礎と実践<br/>
+                  - MariaDBを用いたSQLデータベースの基礎知識<br/>
+                  - Spring MVCを基盤としたWebプログラミングの実践<br/>
+                  - Pythonの基礎 <br/>
+              </div>         
+            </div>
+            <div>
+              <h3>Technical Skills</h3>
+              <div className='skills'>
+                <h5>Backend Development</h5>
+                <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white" />
+                <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
+                <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white" />
+                <h5>Frontend Development</h5>
+                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" />
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
+                <h5>Database Management</h5>
+                <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=MariaDB&logoColor=white" />
+                <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white" />
+                <h5></h5>
+                <h5>Version Control & Deployment</h5>
+                <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/>
+               </div>
             </div>
           </div>
         </div>
