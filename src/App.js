@@ -112,8 +112,8 @@ function App() {
           <div className='aboutme-left'>
             <div>
               <img className='myimg' src={aboutme}></img>
-              <div id='name1'>#KIM HYUNKYUNG</div> 
-              <div id='name2'>#1991.02.03</div>            
+              {/* <div id='name1'>#KIM HYUNKYUNG</div>  */}
+              {/* <div id='name2'>#1991.02.03</div>             */}
             </div>
               <div className='whoami'>
                 <h3>Who am I</h3>
