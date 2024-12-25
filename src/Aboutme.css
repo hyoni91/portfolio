@@ -41,35 +41,39 @@
   
 
 .aboutme-content{
-    width: 88%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .myimg{
-    width: 29vw;
+    width: 100%;
+    max-width: 29vw; /* 최대 크기 제한 */
     margin-top: 3vw;
     box-shadow: 0 7px 10px rgba(0,0,0,0.19), 0 6px 10px rgba(0,0,0,0.23);
     margin-left: 6vw;
 }
 
 .aboutme-left{
-    width: 45vw;
-    height: 75vh;
+    width: 45%;
+    height: 75vh; 
     position: relative;
     background-color: #DDD3C1;
     padding: 0.5vw;
+    overflow: auto; 
+
 }
 
 #name1,
 #name2{
   position: absolute;
-  width: 12vw;
-  background-color: rgb(253, 188, 163);
+  width: 25%;
+  /* background-color: rgb(253, 188, 163); */
+  background-color: rgb(26, 26, 26);
   color: white;
-  padding: 0.5vw;
-  font-size: 0.6em;
+  padding: 1%;
+  font-size: 50%;
   font-weight: 600;
   font-family: 'GmarketSansMedium';
 }
@@ -92,9 +96,12 @@
 }
 
 .aboutme-rigth{
+   width: 45%; 
     height: 75vh;
     padding: 1.5vw;
     margin-bottom: 2vw;
+    overflow: auto; 
+
 }
 
 .aboutme-rigth h3,
@@ -105,6 +112,8 @@
   display: inline-block;
   padding: 0.8vw 0vw;
 }
+
+
 
 .whoami > h3,
 .whoami > div{
@@ -133,18 +142,29 @@
 }
 
 
-
-/* Media Queries for smaller screens */
 @media (max-width: 768px) {
-  .aboutme-content {
-      flex-direction: column;
-      justify-content: center;
-  }
   .myimg {
-      width: 60vw;
-      margin-left: 0;
+    max-width: 30vw; 
+    margin-left: 0;
   }
-  .aboutme-left {
-      width: 80vw;
+
+  .aboutme-left, .aboutme-right {
+    width: 45%; 
+  }
+
+  #name1, #name2 {
+    font-size: 1vw; 
+    width: 30%; 
+    left: 60%;
+  }
+
+  .aboutme-right h3,
+  .whoami h3{
+    font-size: 3vw;
+  }
+
+  .whoami div,
+  .learn{
+    font-size: 2vw;
   }
 }

@@ -112,7 +112,7 @@ function App() {
           <div className='aboutme-left'>
             <div>
               <img className='myimg' src={aboutme}></img>
-              <div id='name1'>KIM HYUNKYUNG</div> 
+              <div id='name1'>#KIM HYUNKYUNG</div> 
               <div id='name2'>#1991.02.03</div>            
             </div>
               <div className='whoami'>
@@ -201,7 +201,7 @@ function App() {
           </div>
         </div>
       </Section>
-      <Section id='contact' bgColor='rgb(253, 253, 253, 0.8)' className='pro-section'>
+      <Section id='contact' bgColor='rgb(255, 255, 255, 1)' className='pro-section'>
         <div className='pro-div'>
           <h1>CONTACT ME</h1>
         </div>

@@ -1,18 +1,26 @@
 import { useEffect, useState } from 'react';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick-theme.css';
-import 'slick-carousel/slick/slick.css';
 import './Projects.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 const ImageModal = ({images,setImages,project, video, setVideo})=>{
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 1000, 
         slidesToShow: 1,
         slidesToScroll: 1,
         arrow: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+        cssEase: 'ease-in-out', 
       };
+      
+      
+      
 
     const [videos, setVideos] = useState('')        
   
