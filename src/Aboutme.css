@@ -15,8 +15,8 @@
 .pro-section {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center; 
-    justify-content: flex-start; 
     padding: 10px;
     position: relative; 
   }
@@ -43,33 +43,56 @@
 .aboutme-content{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    margin: auto;
+    gap: 3vw;
 }
 
 .myimg{
     width: 100%;
-    max-width: 29vw; /* 최대 크기 제한 */
+    max-width: 29vw; 
     margin-top: 3vw;
     box-shadow: 0 7px 10px rgba(0,0,0,0.19), 0 6px 10px rgba(0,0,0,0.23);
-    margin-left: 6vw;
+    margin-left: 7.4vw;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(22px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.myimg {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 2s ease-in-out;
+  object-fit: cover;
+}
+
+.myimg.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .aboutme-left{
     width: 45%;
     height: 75vh; 
     position: relative;
-    background-color: #DDD3C1;
+    background-color: #E3DCCD;
     padding: 0.5vw;
     overflow: auto; 
-
 }
 
 #name1,
 #name2{
   position: absolute;
   width: 25%;
-  /* background-color: rgb(253, 188, 163); */
   background-color: rgb(26, 26, 26);
   color: white;
   padding: 1%;
@@ -95,18 +118,25 @@
     font-size: 0.8em;
 }
 
+.about-icon{
+  text-align: right;
+}
+.about-icon i{
+  font-size: 1.2em;
+}
+
 .aboutme-rigth{
-   width: 45%; 
+    width: 35%; 
     height: 75vh;
     padding: 1.5vw;
     margin-bottom: 2vw;
     overflow: auto; 
-
 }
 
 .aboutme-rigth h3,
 .whoami h3  {
-  font-family: 'SBAggroB';
+  font-family: 'GmarketSansMedium';
+  font-weight: 700;
   font-size: 0.9em;
   margin-top: 1vw;
   display: inline-block;
@@ -125,7 +155,6 @@
 .whoami > div{
   font-size: 0.65em;
   font-family: "Noto Sans JP", serif;
-
 }
 
 .aboutme-rigth h5{

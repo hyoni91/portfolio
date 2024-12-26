@@ -1,6 +1,4 @@
 
-
-
 @font-face {
   font-family: 'Danjo-bold-Regular';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2') format('woff2');
@@ -11,13 +9,12 @@ html {
   scroll-behavior: smooth;
 }
 
-
 html, body {
   height: auto;
   margin: 0;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scroll-padding: 50px; /* 스크롤 시작 지점 보정 */
+  scroll-padding: 50px;
 }
 
 
@@ -66,11 +63,7 @@ html, body {
   cursor: pointer;
   color: white;
   font-weight: 800;
-  /* background-color: #555; */
 }
-  /*  */
-
-
 
 section {
   height: 100vh;
@@ -82,7 +75,7 @@ section {
   font-size: 5vw;
   color: black;
   opacity: 0;
-  transform: translateY(50px); /* 처음에는 아래로 숨겨둔다 */
+  transform: translateY(50px); 
   transition: opacity 2s ease, transform 2s ease;
   text-shadow: 3px 4px 1px  whitesmoke ;
   font-family: 'Danjo-bold-Regular';
@@ -91,13 +84,13 @@ section {
 
 .main ul {
   opacity: 0;
-  transform: translateY(50px); /* 처음에는 아래로 숨겨둔다 */
+  transform: translateY(50px); 
   transition: opacity 2s ease, transform 2s ease;
 }
 
 h1.visible, ul.visible {
   opacity: 1;
-  transform: translateY(0); /* 애니메이션이 실행되면 원위치로 돌아오게 함 */
+  transform: translateY(0); 
 }
 
 .main{
@@ -121,7 +114,6 @@ h1 {
   }
 }
 
-/* 반응형 디자인을 위한 미디어 쿼리 추가 */
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
@@ -143,28 +135,19 @@ h1 {
 }
 
 a{
-  color: rgb(0, 0, 91);
+  color: rgb(0, 0, 0);
   font-size: 1em;
   margin-left: 6px;
   text-decoration-line: none;
   text-decoration: underline;
   cursor: pointer;
-
 }
 
 a:hover{
-  color: rgb(3, 3, 156);
+color: blue;
 
 }
 
-.myimg{
-  object-fit: cover;
-}
-
-
-.aboutme-content p{
-  font-size: 0.6em;
-}
 
 span{
   cursor: pointer;
@@ -177,7 +160,6 @@ span{
 
 .mail-content{
   text-align: left;
-  /* border: 1px solid; */
 }
 
 .mail-content label{
@@ -216,5 +198,7 @@ textarea{
 .mail-btn:hover{
   background-color: rgb(75, 94, 45);
 }
+
+
 
 

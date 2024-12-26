@@ -51,7 +51,8 @@ function App() {
 
   const h1 = useRef();
   const ul = useRef();  
-  const [scrollY, setScrollY] = useState(0); // 스크롤 위치 상태
+  const myImgRef = useRef();
+  const [scrollY, setScrollY] = useState(0); //스크롤 위치 상태
   const [intro, setIntro] = useState({ })
   const [project, setProject] = useState()
   const [images, setImages] = useState([]) //이미지들 
@@ -69,23 +70,37 @@ function App() {
     };
   }, []); 
 
-  // 스크롤 위치에 따라 글자 나타내기
+  // main
   useEffect(() => {
     if (scrollY > 100) {
       h1.current.classList.remove('visible')
-      // ul.current.classList.remove('visible');
     } else {
       h1.current.classList.add('visible');
-      // ul.current.classList.add('visible');
     }
   }, [scrollY]); 
 
-   //모달창 여부 
+
+  useEffect(() => {
+    if (myImgRef.current) {
+      const imgPositionTop = myImgRef.current.getBoundingClientRect().top;
+      const imgPositionBottom = myImgRef.current.getBoundingClientRect().bottom; 
+      const windowHeight = window.innerHeight;
+
+      if (imgPositionTop < windowHeight && imgPositionBottom > 0) {
+        myImgRef.current.classList.add('fade-in');
+      } else {
+        myImgRef.current.classList.remove('fade-in');
+      }
+    }
+  }, [scrollY]);
+
+
    const [modalOpen, setModalOpen] = useState(false)
-   //클릭하면 모달창 열고 닫기
    const showModal = () => {
      setModalOpen(!modalOpen)
    }
+
+ 
 
   return (
     <div className='wrap'>
@@ -111,19 +126,20 @@ function App() {
         <div className='aboutme-content'>
           <div className='aboutme-left'>
             <div>
-              <img className='myimg' src={aboutme}></img>
+              <img ref={myImgRef} src={aboutme} alt='About Me' className='myimg' />
+
               {/* <div id='name1'>#KIM HYUNKYUNG</div>  */}
               {/* <div id='name2'>#1991.02.03</div>             */}
             </div>
               <div className='whoami'>
-                <h3>Who am I</h3>
+                <h3>WHO AM I?</h3>
                 <div>
                   エンジニアとして第一歩踏み出したばかりのキムヒョンギョンです。
                   こちらのサイトでは、ユーザー様が使いやすいウェブサイトを作るために
                   色々工夫して作り上げたプロジェクトを紹介ております。
-                  まだまだな技術ですが、どうか優しい目でご覧ください☺️
+                  まだまだな技術ですが、どうか優しい目でご覧ください。
                 </div>
-                <div>
+                <div className='about-icon'>
                   <a href='https://github.com/hyoni91' target='_blank' rel="noopener noreferrer">
                   <i className="bi bi-github"></i>
                   </a>  
@@ -176,28 +192,64 @@ function App() {
         </div>
         <div className='pro-grid'>
           <div onClick={()=>{setModalOpen(true); setProject(1) }}>
-            TODO LIST
-            <img src='/portfolio/images/todo.png'></img>
+            {/* TODO LIST */}
+            <img src='/portfolio/images/todo.png' />
+            <div>
+              <p>
+                簡単なメモやスケジュールの登録可能
+              </p>
+              <span>TODO LIST →</span>
+            </div>
           </div>
           <div onClick={()=>{setModalOpen(true); setProject(2)}}>
-            BOOK STORE
-            <img src='/portfolio/images/bookmain.jpg'></img>
+            {/* BOOK STORE */}
+            <img src='/portfolio/images/bookmain.jpg' />
+            <div>
+              <p>
+                ブックショップのサイトを実装
+              </p>
+              <span>BOOK STORE →</span>
+            </div>
           </div>
           <div onClick={()=>{setModalOpen(true); setProject(3)}}>
-            MEDI CLICK1
-            <img src='/portfolio/images/medi1.jpg'></img>
+            {/* MEDI CLICK1 */}
+            <img src='/portfolio/images/medi1.jpg' />
+            <div>
+              <p>
+                病院のリアルタイムの予約と予約キャンセルの機能を実装
+              </p>
+              <span>MEDI CLICK1 →</span>
+            </div>
           </div>
           <div onClick={()=>{setModalOpen(true); setProject(4)}}>
-            MEDI CLICK2
-            <img src='/portfolio/images/medi2.jpg'></img>
+            {/* MEDI CLICK2 */}
+            <img src='/portfolio/images/medi2.jpg' />
+            <div>
+              <p>
+                リアルタイムの温度管理ができるダッシュボードを作成
+              </p>
+              <span>MEDI CLICK2 →</span>
+            </div>
           </div>
           <div onClick={()=>{setModalOpen(true); setProject(5)}}>
-            MEDI CLICK3
-            <img src='/portfolio/images/medi3.png'></img>
+            {/* MEDI CLICK3 */}
+            <img src='/portfolio/images/medi3.png' />
+            <div>
+              <p>
+                医療用品の受注プロセスを実装
+              </p>
+              <span>MEDI CLICK3 →</span>
+            </div>
           </div>
           <div onClick={()=>{setModalOpen(true); setProject(6)}}>
-            PORTFOLIO
-            <img src='/portfolio/images/port.png'></img>
+            {/* PORTFOLIO */}
+            <img src='/portfolio/images/port.png' />
+            <div>
+              <p>
+                KIM HYUNKYUNGのポートフォリオサイト
+              </p>
+              <span>PORTFOLIO →</span>
+            </div>
           </div>
         </div>
       </Section>
