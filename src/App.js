@@ -191,24 +191,24 @@ function App() {
           <h1>PROJECTS</h1>
         </div>
         <div className='pro-grid'>
-          <div onClick={()=>{setModalOpen(true); setProject(1) }}>
+          <div >
             {/* TODO LIST */}
             <img src='/portfolio/images/todo.png' />
             <div>
               <p>
                 簡単なメモやスケジュールの登録可能
               </p>
-              <span>TODO LIST →</span>
+              <span　onClick={()=>{setModalOpen(true); setProject(1) }}>TODO LIST →</span>
             </div>
           </div>
-          <div onClick={()=>{setModalOpen(true); setProject(2)}}>
+          <div >
             {/* BOOK STORE */}
             <img src='/portfolio/images/bookmain.jpg' />
             <div>
               <p>
                 ブックショップのサイトを実装
               </p>
-              <span>BOOK STORE →</span>
+              <span　onClick={()=>{setModalOpen(true); setProject(2)}}>BOOK STORE →</span>
             </div>
           </div>
           <div onClick={()=>{setModalOpen(true); setProject(3)}}>

@@ -15,9 +15,10 @@
 }
 
 .pro-grid > div > div:hover{
-    opacity: 0.6;
-    transition: 0.5s;    
+    opacity: 0.7;
+    transition: 0.7s;    
 }
+
 
 .pro-grid > div > div >span{
     border: 1px solid white;
@@ -111,8 +112,9 @@
     width: 96%;
     margin: auto;
     height: auto;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgray;
+    margin-top: 6px;
+    /* border-top: 1px solid lightgrey; */
+    /* border-bottom: 1px solid lightgray; */
   }
 
 .image-grid p{

@@ -7,12 +7,12 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const ImageModal = ({images,setImages,project, video, setVideo})=>{
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 1000, 
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrow: true,
+        arrow: false,
         autoplay: true,
         autoplaySpeed: 2000,
         pauseOnHover: true,
@@ -130,8 +130,6 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
                     )}
                     このブラウザは動画再生に対応していません。
                     </video>
-
-
                 </>
                 :
                 <>
