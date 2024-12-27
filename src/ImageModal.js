@@ -7,14 +7,14 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const ImageModal = ({images,setImages,project, video, setVideo})=>{
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
-        speed: 1000, 
+        speed: 2000, 
         slidesToShow: 1,
         slidesToScroll: 1,
         arrow: false,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1200,
         pauseOnHover: true,
         cssEase: 'ease-in-out', 
       };
@@ -57,12 +57,17 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
                 break;
             case 2 : setImages(
                 [
-                   '/portfolio/images/bookshop1.jpg',
-                    '/portfolio/images/bookshop2.jpg',
-                    '/portfolio/images/bookshop3.jpg',
-                    '/portfolio/images/bookshop4.jpg',
-                    '/portfolio/images/bookshop5.jpg',
-                    '/portfolio/images/bookshop6.jpg'
+                //    '/portfolio/images/bookshop1.jpg',
+                //     '/portfolio/images/bookshop2.jpg',
+                //     '/portfolio/images/bookshop3.jpg',
+                //     '/portfolio/images/bookshop4.jpg',
+                //     '/portfolio/images/bookshop5.jpg',
+                //     '/portfolio/images/bookshop6.jpg',
+                    '/portfolio/images/book1.png',
+                   '/portfolio/images/book2.png',
+                   '/portfolio/images/book3.png',
+                   '/portfolio/images/book4.png',
+                   '/portfolio/images/book5.png' 
                 ]
             )
                 break;
@@ -116,9 +121,9 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
             {
                 video?
                 <>
-                    <p>
-                        <span onClick={(e)=>{setVideo(false)}}>
-                            <i className="bi bi-image"></i> 
+                    <p className='project-sien'>
+                        <i className="bi bi-image" />  
+                        <span onClick={(e)=>{setVideo(false)}}> 
                             画面に戻る
                         </span>
                     </p>
@@ -133,14 +138,14 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
                 </>
                 :
                 <>
-                    <p >
-                        <span onClick={(e)=>{setVideo(true)}}>
-                         <i className="bi bi-camera-reels"></i> 
-                            動画試演
+                    <p className='project-sien'>
+                        <i className="bi bi-camera-reels" />   
+                        <span onClick={(e)=>{setVideo(true)}}> 
+                             動画試演
                         </span>
                     </p>
 
-                    <Slider {...settings}>
+                    <Slider className='slider' {...settings}>
                         {
                             images.map((img,i)=>{
                                 return(

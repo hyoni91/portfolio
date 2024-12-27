@@ -32,7 +32,6 @@
 }
 
 
-
 .pro-grid{
     display: grid;
     grid-template-columns: repeat(3,28vw);
@@ -63,12 +62,6 @@
     box-shadow: 0 7px 10px rgba(111, 111, 111, 0.19), 0 6px 10px rgba(67, 67, 67, 0.23);    /* border: 1px solid red; */
 }
 
-/* .pro-grid div:hover{
-    transform: scale(1.03);
-    transition: 0.3s;
-} */
-
-
 /* 모달창 내용*/
 
 .modal-wrap{
@@ -79,7 +72,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
+    gap: 50px;
 }
 
 .modal-wrap > div:first-child{
@@ -89,33 +82,68 @@
 }
 
 .modal-wrap > div:last-child{
-    width: 57%;
+    width: 60%;
     height: 90%;
     margin-left: 10px;
     margin-top: 5vw;
     margin: auto;
-    /* border: 1px solid yellowgreen; */
+}
 
+.detail{
+    margin-top: 10px;
+}
+.detail h6{
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+.detail img{
+    margin: 0px;
+    width: 4vw;
+    height:2.5vh;
+    margin-right: 2px;
+}
+
+.detail h6:first-child{
+    font-size: 1em;
+}
+
+.project-sien {
+    margin-top: 10px;
+}
+
+.project-sien span{
+    letter-spacing: 1px;
+    margin-left: 4px;
+}
+
+.project-sien span:hover{
+    border-bottom: 1px solid darkblue;
+    color: darkblue;
 }
 
 
 .videoTag{
-    width: 96%;
+    width: 100%;
     height: auto;
     margin: auto;
     border: 1px solid lightgray;
-
+    margin-top: 10px;
 }
 
+.slider{
+    width: 100%;
+    background-color: rgb(210, 210, 210);
+    height: auto;
+    margin-top: 10px;
+}
 
 .sliderimg img{
-    width: 96%;
+    width: 98%;
     margin: auto;
     height: auto;
     margin-top: 6px;
-    /* border-top: 1px solid lightgrey; */
-    /* border-bottom: 1px solid lightgray; */
   }
+
 
 .image-grid p{
     display: inline-block;
@@ -130,21 +158,22 @@
     display: flex;
     flex-direction: column;
     letter-spacing: 2px;
-    padding: 3px;
+    padding: 2px;
+    height: 100%;
     font-family: "Noto Sans JP", serif;
 }
 
-.intro-flex div:first-child{
-    height: 30vh;
+.intro-flex > .first{
+    height: 35vw;
+    font-size: 0.9em;
 }
 
-.intro-flex div:nth-child(2){
-    height: 30vh; 
+.intro-flex > .second{
+    height: 35vw;
 }
 
-.intro-flex div:last-child{
-    height: 5vh;
-    margin-top: 10px;
+.intro-flex > .link-div{
+    margin-top: 1vw;
 }
 
 .link-div a,
@@ -188,7 +217,7 @@
 
     .modal-wrap > div:first-child, 
     .modal-wrap > div:last-child {
-        width: 100%;
+        width: 90vw;
     }
 
     .videoTag {
@@ -200,14 +229,23 @@
         width: 90vw;
     }
     .intro-flex {
+        width: 50vw;
         letter-spacing: 1px; 
     }
 }
 
 @media (max-width: 480px) {
-    .intro-flex {
-        letter-spacing: 0.5px; 
+    .modal-wrap {
+        flex-direction: column;
     }
+
+    .modal-wrap > div:first-child, 
+    .modal-wrap > div:last-child {
+        width: 90vw;
+    }
+
+
+
 }
 
 

@@ -50,11 +50,11 @@
 }
 
 .myimg{
-    width: 100%;
+    width: 70%;
     max-width: 29vw; 
     margin-top: 3vw;
     box-shadow: 0 7px 10px rgba(0,0,0,0.19), 0 6px 10px rgba(0,0,0,0.23);
-    margin-left: 7.4vw;
+    margin-left: 6vw;
 }
 
 @keyframes fadeIn {
@@ -81,7 +81,7 @@
 }
 
 .aboutme-left{
-    width: 45%;
+    width: 40%;
     height: 75vh; 
     position: relative;
     background-color: #E3DCCD;
@@ -132,12 +132,15 @@
     margin-bottom: 2vw;
     overflow: auto; 
 }
+.whoami{
+  margin-top: 2.5vw;
+}
 
 .aboutme-rigth h3,
 .whoami h3  {
   font-family: 'GmarketSansMedium';
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin-top: 1vw;
   display: inline-block;
   padding: 0.8vw 0vw;
@@ -153,7 +156,7 @@
 }
 
 .whoami > div{
-  font-size: 0.65em;
+  font-size: 0.6em;
   font-family: "Noto Sans JP", serif;
 }
 
@@ -174,7 +177,7 @@
 @media (max-width: 768px) {
   .myimg {
     max-width: 30vw; 
-    margin-left: 0;
+    margin-left: 6vw;
   }
 
   .aboutme-left, .aboutme-right {
@@ -189,7 +192,7 @@
 
   .aboutme-right h3,
   .whoami h3{
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .whoami div,

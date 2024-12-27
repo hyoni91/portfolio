@@ -6,24 +6,14 @@ const IntroModal = ({intro,setIntro,project})=>{
     const project1 = {
         name : 'TODO LIST',
         content : 
-        <>
-        <h6><i className="bi bi-person-circle" /> 個人プロジェクト</h6>
-        <p>
-        今日のやることや目標をsessionStorageに入れて管理できます。
-        また、カレンダーを使ってスケジュールや誕生日、記念日なども入れられます。
-        日程がある日はアイコンが表示されるます。
-        本プロジェクトはカレンダーとsessionStorage,checkboxの理解を深めるために作成しました。
-        </p>
-
-        </>,
+        <div>
+        本プロジェクトは、簡単なメモや今日のやること、目標などを入力し、管理できます。
+        また、カレンダーを使ってスケジュールの登録や記念日又は誕生日の入力も可能です。
+        日程がある日はアイコンが表示され、スケジュール管理に容易です。
+        完了した目標は「DONE」メニューで確認できます。
+        </div>,
         detail : 
                 <>
-                {/* 2024.11.6~2024.11.10<br/> */}
-                <br/>
-                {/* - レイアウト設計<br/>
-                - 機能実装<br/>
-                - デザイン<br/>
-                - 機能テスト */}
                 </>,
         url : 'https://hyoni91.github.io/TodoList/'
     }
@@ -32,48 +22,59 @@ const IntroModal = ({intro,setIntro,project})=>{
         name : 'BOOK STORE',
         content : 
         <>
-        <i className="bi bi-person-circle" /> 個人プロジェクト<br/>
-
-        BOOK STOREでは、本をカテゴリ別に分類して確認できます。
-        お気に入りの本はカゴに入れてカゴの詳細ページで数量変更や削除などのもできます。
-        ADMINの場合、本の詳細ページや登録、会員に関連する情報も確認できます。
-        本プロジェクトはサーバーとフロント、両方の機能を使って作成しました。
+             <div>
+             本プロジェクトは、本をカテゴリ別に分類して確認できます。また、アカウント登録をして、お気に入りの本をカゴに入れることが可能です。
+            カゴの詳細ページでは本の情報や数量変更、削除などの機能も実装しております。
+            権限がADMINの場合は本の登録、会員情報の確認及び検索機能の操作が可能になります。
+            </div>
         </>,
         detail : 
-            <>
-
-            {/* 2024.07.20 ~ 2024.08.20 <br/> */}
-            {/* <br/>
-            - データベース作業 <br/>
-            - メインページデザイン <br/>
-            - 会員登録 / ログイン機能の実装 <br/>
-            - カテゴリ別リスト機能の作成 <br/>
-            - 書籍の詳細情報機能の実装 <br/>
-            - カート機能の実装 <br/>
-            - 管理者による書籍登録機能の実装 <br/>
-            - 管理者による会員管理機能の実装 <br/> */}
-            </>,
+            <div className="detail">
+                 <h6>Technical Skills</h6>
+                <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white" />
+                <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
+                <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white" />
+                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" /><br/>
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
+                <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=MariaDB&logoColor=white" />
+                <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/>
+            </div>
+            ,
        url : ''
 
         
     }
 
     const project3 = {
-        name : '病院予約',
-        content : '病院のホームページをログインすると予約ができます。診療科と日付を選択するとリアルタイムで予約が可能な時間帯を確認できます。予約ができない場合は該当の時間帯の選択ができず、グレーの色で表示されます。今日と過去の日付は選択できません。もし、アカウントがない場合は会員登録もできます。',
+        name : '病院予約(team project)',
+        content : 
+        <div>
+            本プロジェクトは、チームで開発したリアルタイム病院予約ページです。
+            予約機能はログインしたユーザーのみ利用可能です。
+            予約時は本日から過去の日時や3ヶ月先の予約が選択できません。
+            診療科目と日付を選択すると、予約可能な時間帯が表示されます。
+            さらに、予約案内を希望するユーザーは「予約する」ボタンをクリックし、
+            メール入力欄にメールアドレスを入力することで、予約内容がメールで送信されます。
+        </div>,
+        
         detail :
         <>
-        {/* 2024.08.23 ～ 2024.09.06 <br/> */}
-        <i className="bi bi-person-circle"></i> リーダー/DB設計/メイン機能＆デザイン <br/>
-        <br/>
-        - データベース作業 <br/>
-        - メインページのデザイン <br/>
-        - 会員登録 / ログイン機能の実装 <br/>
-        - 医療スタッフ / 診療科ページの実装 <br/>メイン
-        - 掲示板の作成、編集、削除機能の実装 <br/>
-        - リアルタイム予約機能の実装 <br/>
-        - 予約状況一覧ページの実装 <br/>
-        - 診療状況チャート機能の実装 
+        ・ チームリーダー <br/>
+        ・ データベース設計 <br/>
+        ・ メインページのデザイン <br/>
+        ・ リアルタイム予約機能の実装 <br/>
+        <div className="detail">
+                 {/* <h6>Technical Skills</h6> */}
+                <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white" />
+                <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
+                <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white" />
+                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" /><br/>
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
+                <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=MariaDB&logoColor=white" />
+                <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/>
+            </div>
         </>,
         url : ''
 
@@ -81,19 +82,20 @@ const IntroModal = ({intro,setIntro,project})=>{
 
     const project4 = {
         name : 'リアルタイム温度管理',
-        content : 'Raspberry Piを使用してリアルタイムで温度を取得し、病院管理者用のダッシュボードを視覚的に実装しました。危険温度を超えた場合、アラートが表示され、テーブル内のアイコンの色が変わるように設計されています。',
+        content : 
+        <div>
+            本プロジェクトは、チームで開発したリアルタイム温度管理のダッシュボードです。
+            Raspberry Piを使用して温度を取得し、病院管理者用のダッシュボードを視覚的に実装しました。
+            危険温度を超えた場合、アラートが表示され、テーブル内のアイコンの色が変わります。
+            平均温度や温度設定の参考用で現在の天気情報も確認できます。
+        </div>,
         detail :
         <>
-            {/* 2024.09.09 ～ 2024.09.27 <br/> */}
-            <i className="bi bi-person-circle"></i> リーダー/デザイン/機能追加 <br/>
-            <br/>
-            - データベース作業<br/>
-            - Raspberry Piを用いた作業<br/>
-            - DB挿入および接続<br/>
-            - モニタリングページのデザイン<br/>
-            - Reactチャート機能の実装<br/>
-            - リアルタイム温度グラフ機能の実装<br/>
-            - 天気APIを使用した機能の実装<br/>
+            ・ チームリーダー<br/>
+            ・ データベース設計<br/>
+            ・ ダッシュボードのデザイン<br/>
+            ・ リアルタイム温度グラフ機能の実装<br/>
+            ・ 天気APIを使用した機能の実装<br/>
         </>,
         url : ''
 
@@ -101,20 +103,22 @@ const IntroModal = ({intro,setIntro,project})=>{
 
     const project5 = {
         name : '受注システム管理',
-        content : '病院側（取引先）からの注文を受けた後、受注状況を管理し、在庫および配送まで処理できるように実装しました。',
+        content : 
+        <div>
+            本プロジェクトは、チームで開発した医療用品の受注プロセスシステムです。
+            取引先（病院側）の番号で注文ができ、注文を完了すると自動で受注番号や詳細が入力されます。
+            受注側では取引先の管理を含め、商品登録及び在庫管理、配送まで処理できます。
+            受注番号を元に受注状況（待機、配送、キャンセル）を管理できます。
+            こちらの状況は取引先側でも確認できます。
+        </div>,
         detail :
         <>
-             {/* 2024年9月30日～2024年10月23日 <br/> */}
-            <i className="bi bi-person-circle"></i> リーダー/DB設計/取引先&受注管理＆在庫管理ページ<br/>
-            <br/>
-            - データベース作業<br/>
-            - 受注・発注ページのデザイン<br/>
-            - アイテム登録機能の実装<br/>
-            - 取引先管理状況機能の実装<br/>
-            - 受注・発注機能の実装<br/>
-            - DBのトリガー作業<br/>
-            - 現在の在庫状況機能の実装<br/>
-            - 配送状況機能の実装<br/>
+            ・チームリーダー<br/>
+            ・データベース設計、トリガー作業<br/>
+            ・受注側ページのデザイン<br/>
+            ・取引先ページ機能実装<br/>
+            ・受注ページ機能実装<br/>
+            ・在庫ページ機能実装<br/>
         </>,
         url : ''
 
@@ -124,8 +128,10 @@ const IntroModal = ({intro,setIntro,project})=>{
         name : 'PORTFOLIOサイト',
         content : 
         <>
-        <i className="bi bi-person-circle" /> 個人プロジェクト<br/>
-        今まで取り組んだプロジェクトをまとめたサイトです。こちらでは、プロジェクトの内容と機能の説明、動画試演などを確認できます。
+        本プロジェクトは、個人開発およびチーム開発の成果をまとめたサイトです。
+        プロジェクトに使ったツールや内容の確認を含め、
+        サイトのリンク、動画試演、イメージなどで各プロジェクトを見ることができます。
+        
         </>,
         detail : 
         <>
@@ -158,7 +164,7 @@ const IntroModal = ({intro,setIntro,project})=>{
     return(
     <>
         <div className="intro-flex">
-            <div>
+            <div className="first">
                 <h4>
                     <i className="bi bi-archive" /> 
                     <span className="intro-title">
@@ -169,7 +175,7 @@ const IntroModal = ({intro,setIntro,project})=>{
                 <p>{intro.content}</p>
 
             </div>
-            <div>
+            <div className="second">
                 <p>{intro.detail}</p>
             </div>
             <div className="link-div">
