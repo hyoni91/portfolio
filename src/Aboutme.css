@@ -19,6 +19,7 @@
     align-items: center; 
     padding: 10px;
     position: relative; 
+    margin: auto;
   }
   
   .pro-div h1 {
@@ -115,7 +116,7 @@
 }
 
 .aboutme-left div{
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .about-icon{
