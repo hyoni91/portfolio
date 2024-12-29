@@ -1,5 +1,6 @@
 .pro-grid > div{
     position: relative;
+
 }
 
 .pro-grid > div > div{
@@ -43,6 +44,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 600;
+
 }
 
 .pro-grid img{
@@ -73,6 +75,8 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    max-width: 1200px; /*size test*/
+    margin: auto;/*size test*/
 }
 
 .modal-wrap > div:first-child{
@@ -87,6 +91,7 @@
     margin-left: 10px;
     margin-top: 5vw;
     margin: auto;
+    /* border: 1px solid black; */
 }
 
 .detail{
@@ -154,6 +159,21 @@
     margin-left: 3px;
 }
 
+.intro-x{
+    text-align: right;
+    margin: 0px;
+}
+
+.intro-x i{
+    cursor: pointer;
+    padding: 2px;
+    margin: 0px;
+}
+
+.intro-x i:hover{
+    font-weight: bold;
+}
+
 .intro-flex{
     display: flex;
     flex-direction: column;
@@ -164,7 +184,7 @@
 }
 
 .intro-flex > .first{
-    height: 35vw;
+    height: 34vw;
     font-size: 0.9em;
 }
 

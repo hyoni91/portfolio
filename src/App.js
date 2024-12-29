@@ -257,20 +257,22 @@ function App() {
         <div className='pro-div'>
           <h1>CONTACT ME</h1>
         </div>
-        <div>
-          <h2>Thank you for watching!</h2>
+        <div className='contact-flex'> 
           <div className='contact-content'>
-          ポートフォリオをご覧いただき、ありがとうございます。<br/>
-          新しい環境で学び続け、さらなるスキルアップを目指しています。<br/>
-          どうぞよろしくお願いします。
+            <h2>Thank you for watching!</h2>
+            <div>
+            ポートフォリオをご覧いただき、ありがとうございます。<br/>
+            新しい環境で学び続け、さらなるスキルアップを目指しています。<br/>
+            どうぞよろしくお願いします。
+          </div>
           </div>
           <form ref={form} onSubmit={sendEmail} className='mail-content'>
-             <label>NAME</label> <br/>
-             <input type="text" name="name" /><br/> 
+             <label>NAME</label> 
+             <input type="text" name="name" />
              <label>EMAIL</label><br/>
-             <input type="email" name="email" /><br/>
-             <label>MESSAGE</label><br/>
-             <textarea name="message" /><br/>
+             <input type="email" name="email" />
+             <label>MESSAGE</label>
+             <textarea name="message" />
              <input className='mail-btn' type="submit" value="SEND" />     
            </form>
         </div>
@@ -294,7 +296,9 @@ function App() {
               content: {
                 position: 'absolute',
                 width: '87vw',
+                maxWidth:'1200px',
                 height: '77vh',
+                maxHeight : '800px',
                 top: '10%',
                 left: '8%',
                 right: '10%',
@@ -308,6 +312,9 @@ function App() {
               }
             }}
             >
+              {/* <div className="intro-x"> 
+              <i className="bi bi-x-square" />             
+              </div> */}
               <div className='modal-wrap'>
                 <div>
                 <IntroModal intro={intro} setIntro={setIntro} project={project}/>

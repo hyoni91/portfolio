@@ -14,6 +14,14 @@ const IntroModal = ({intro,setIntro,project})=>{
         </div>,
         detail : 
                 <>
+                 <div className="detail">
+                 <h6>Technical Skills</h6>
+                <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
+                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" /><br/>
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
+                <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/>
+            </div>
                 </>,
         url : 'https://hyoni91.github.io/TodoList/'
     }
@@ -96,6 +104,17 @@ const IntroModal = ({intro,setIntro,project})=>{
             ・ ダッシュボードのデザイン<br/>
             ・ リアルタイム温度グラフ機能の実装<br/>
             ・ 天気APIを使用した機能の実装<br/>
+            <div className="detail">
+                 <h6>Technical Skills</h6>
+                <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white" />
+                <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
+                <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white" />
+                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" /><br/>
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
+                <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=MariaDB&logoColor=white" />
+                <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/>
+            </div>
         </>,
         url : ''
 
@@ -119,6 +138,17 @@ const IntroModal = ({intro,setIntro,project})=>{
             ・取引先ページ機能実装<br/>
             ・受注ページ機能実装<br/>
             ・在庫ページ機能実装<br/>
+            <div className="detail">
+                 <h6>Technical Skills</h6>
+                <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white" />
+                <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
+                <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white" />
+                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" /><br/>
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
+                <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=MariaDB&logoColor=white" />
+                <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/>
+            </div>
         </>,
         url : ''
 
@@ -135,11 +165,14 @@ const IntroModal = ({intro,setIntro,project})=>{
         </>,
         detail : 
         <>
-         {/* 2024.11.20～進行中 <br/><br/> */}
-            {/* - レイアウト設計<br/>
-            - CSS作業<br/>
-            - イメージや動画作成<br/> 
-            - メール送る機能実装<br/>  */}
+              <div className="detail">
+                 <h6>Technical Skills</h6>
+                <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
+                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" /><br/>
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
+                <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/>
+            </div>
         </>,
         url : 'https://hyoni91.github.io/portfolio/'
 
