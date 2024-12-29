@@ -142,8 +142,12 @@ span{
 }
 
 .mail-content{
-  width: 28%;
+  width: 34%;
+  height: auto;
   text-align: left;
+  padding-left: 3vw;
+  padding-bottom: 1vw;
+  box-shadow: 0px 3px 10px 6px rgba(149, 149, 149, 0.19)
 }
 
 .mail-content label{
@@ -153,7 +157,7 @@ span{
 }
 
 .mail-content > input{
-  width: 100%;
+  width: 90%;
   font-size: 0.6em;
   padding: 2px;
   outline: none;
@@ -163,7 +167,7 @@ span{
 
 textarea{
   height: 25vh;
-  width: 100%;
+  width: 90%;
   font-size: 0.6em;
   resize: none;
   outline: none;
