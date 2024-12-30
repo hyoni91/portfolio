@@ -57,17 +57,14 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
                 break;
             case 2 : setImages(
                 [
-                //    '/portfolio/images/bookshop1.jpg',
-                //     '/portfolio/images/bookshop2.jpg',
-                //     '/portfolio/images/bookshop3.jpg',
-                //     '/portfolio/images/bookshop4.jpg',
-                //     '/portfolio/images/bookshop5.jpg',
-                //     '/portfolio/images/bookshop6.jpg',
                     '/portfolio/images/book1.png',
                    '/portfolio/images/book2.png',
                    '/portfolio/images/book3.png',
                    '/portfolio/images/book4.png',
-                   '/portfolio/images/book5.png' 
+                   '/portfolio/images/book5.png',
+                   '/portfolio/images/book6.png',
+                   '/portfolio/images/book7.png',
+                   '/portfolio/images/book8.png',
                 ]
             )
                 break;
