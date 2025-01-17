@@ -221,7 +221,12 @@ textarea{
 }
 
 @media (max-width: 480px) {
+
+  .fixed-navbar{
+    padding: 10px 10px;
+    font-size: 0.8em;
+  }
   .main h1 {
-    font-size: 6vw;
+    font-size: 8vw;
   }
 }
