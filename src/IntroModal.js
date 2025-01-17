@@ -75,7 +75,7 @@ const IntroModal = ({intro,setIntro,project})=>{
         ・ メインページのデザイン <br/>
         ・ リアルタイム予約機能の実装 <br/>
         <div className="detail">
-                 {/* <h6>Technical Skills</h6> */}
+                 <h6>Technical Skills</h6>
                 <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white" />
                 <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
                 <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white" />
