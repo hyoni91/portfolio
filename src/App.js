@@ -267,8 +267,8 @@ function App() {
           </div>
           </div>
           <form ref={form} onSubmit={sendEmail} className='mail-content'>
-             <label>NAME</label> 
-             <input type="text" name="name" />
+             <label>NAME</label><br/>
+             <input type="text" name="name" /><br/>
              <label>EMAIL</label><br/>
              <input type="email" name="email" />
              <label>MESSAGE</label>
