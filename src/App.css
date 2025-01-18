@@ -252,7 +252,6 @@ textarea{
 }
 
 @media (max-width: 480px) {
-
   .contact-flex{
     display: flex;
     flex-direction: column;
@@ -262,9 +261,9 @@ textarea{
     align-items: center;
   }
   .contact-content{
-    width: 80%;
-    height: 23%;
-    font-size: 0.35em;
+    width: 95%;
+    height: 22%;
+    font-size: 0.3em;
     text-align: center;
   }
   
@@ -290,12 +289,14 @@ textarea{
     padding: 2px;
   
   }
- 
+  .fixed-navbar ul{
+    gap: 2px;
+  } 
   .fixed-navbar{
-    padding: 10px 10px;
-    font-size: 0.7em;
+    padding: 3px;
+    font-size: 0.5em;
   }
   .main h1 {
-    font-size: 8vw;
+    font-size: 1em;
   }
 }

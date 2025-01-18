@@ -300,7 +300,7 @@
   
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
     .pro-grid {
         grid-template-columns: repeat(2, 43vw);
         grid-template-rows: auto;
@@ -310,13 +310,13 @@
     .pro-grid >  div,
     .pro-grid >div > div{
         width: 40vw;
-        height: 19vh;
+        height: 13vh;
 
     }
 
     .pro-grid img {
         width: 35vw;
-        height: 15vh;
+        height: 10vh;
     }
 
     .pro-grid div:last-child p{
