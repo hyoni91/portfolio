@@ -9,12 +9,12 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
     const settings = {
         dots: true,
         infinite: true,
-        speed: 2000, 
+        speed: 3000, 
         slidesToShow: 1,
         slidesToScroll: 1,
         arrow: false,
         autoplay: true,
-        autoplaySpeed: 1200,
+        autoplaySpeed: 2000,
         pauseOnHover: true,
         cssEase: 'ease-in-out', 
       };
@@ -70,33 +70,28 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
                 break;
             case 3 :  setImages(
                 [
-                    '/portfolio/images/yoyaku1.jpg', 
-                    '/portfolio/images/yoyaku2.jpg',
-                    '/portfolio/images/yoyaku3.jpg',
-                    '/portfolio/images/yoyaku4.jpg'
+                    '/portfolio/images/yoyaku1.png', 
+                    '/portfolio/images/yoyaku2.png',
+                    '/portfolio/images/yoyaku3.png',
+                    '/portfolio/images/yoyaku4.png'
                 ]
             )
 
                 break;
             case 4 :  setImages(
                 [
-                    '/portfolio/images/ras1.jpg', 
-                    '/portfolio/images/ras2.jpg',
-                    '/portfolio/images/ras3.jpg',
-                    '/portfolio/images/ras4.jpg',
-                    '/portfolio/images/ras5.jpg',
+                    '/portfolio/images/ras1.png', 
+                    '/portfolio/images/ras2.png'
                 ]
             )
                 break;
             case 5 :  setImages(
                 [
-                    '/portfolio/images/jyucyuu1.jpg', 
-                    '/portfolio/images/jyucyuu2.jpg',
-                    '/portfolio/images/jyucyuu3.jpg',
-                    '/portfolio/images/jyucyuu4.jpg',
-                    '/portfolio/images/jyucyuu5.jpg',
-                    '/portfolio/images/jyucyuu6.jpg',
-                    '/portfolio/images/jyucyuu7.jpg'
+                    '/portfolio/images/jyucyuu1.png', 
+                    '/portfolio/images/jyucyuu2.png',
+                    '/portfolio/images/jyucyuu3.png',
+                    '/portfolio/images/jyucyuu4.png',
+                    '/portfolio/images/jyucyuu5.png'
                 ]
             )
                 break;
