@@ -118,7 +118,7 @@
 .whoami h3  {
   font-family: 'GmarketSansMedium';
   font-weight: 700;
-  font-size: 0.8em;
+  font-size: 0.75em;
   margin-top: 1vw;
   display: inline-block;
   padding: 0.8vw 0vw;
@@ -139,17 +139,58 @@
 }
 
 .aboutme-rigth h5{
-  font-size: 0.8em;
+  font-size: 0.7em;
   margin-top: 0.3vw;
 }
 
 .aboutme-rigth div{
-  font-size: 0.7em;
+  font-size: 0.66em;
 }
 
 .skills img{
   margin-right: 2px;
 }
+
+
+
+
+@media (max-width: 1024px) {
+  .myimg {
+    max-width: 30vw; 
+    margin-left: 6vw;
+  }
+
+  .aboutme-left{
+    width: 44%; 
+  }
+  .aboutme-right {
+    width: 50%; 
+ 
+  }
+
+  .aboutme-right h3,
+  .whoami h3{
+    font-size: 0.85em;
+  }
+
+  .aboutme-rigth{
+    font-size: 0.8em;
+  }
+
+  .whoami div,
+  .learn{
+    font-size: 0.55em;
+    letter-spacing: 1px;
+  }
+
+  .skills img{
+    width: 57px;
+    height: 17px;
+  }
+
+
+}
+
 
 
 @media (max-width: 768px) {

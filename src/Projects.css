@@ -35,11 +35,11 @@
 
 .pro-grid{
     display: grid;
-    grid-template-columns: repeat(3,28vw);
-    grid-template-rows: 18vw 19vw;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: auto;
     gap: 14px;
-    width: 100%;
-    height: 75vh;
+    /* width: 100%; */
+    /* height: 75vh; */
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -207,25 +207,44 @@
     color: blue;
 }
 
-
-
-@media (max-width: 768px) {
+@media (max-width:1024px) {
     .pro-grid {
-        grid-template-columns: repeat(2, 44vw);
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
         grid-template-rows: auto;
-        overflow: auto;
+        gap: 10px;
     }
-
     .pro-grid >  div,
     .pro-grid >div > div{
-        width: 44vw;
-        height: 29vh;
+        width: 34vw;
+        height: 25vh;
 
     }
 
     .pro-grid img {
-        width: 40vw;
+        width: 31vw;
+        height: 20vh;
+    } 
+    
+}
+
+@media (max-width: 768px) {
+    .pro-grid {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-rows: auto;
+        gap: 8px;
+    }
+
+    
+    .pro-grid >  div,
+    .pro-grid >div > div{
+        width: 42vw;
         height: 25vh;
+
+    }
+
+    .pro-grid img {
+        width: 38vw;
+        height: 20vh;
     }
 
     .modal-wrap {
@@ -302,21 +321,22 @@
 
 @media (max-width: 450px) {
     .pro-grid {
-        grid-template-columns: repeat(2, 43vw);
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
         grid-template-rows: auto;
+        gap: 9px;
         overflow: auto;
     }
 
     .pro-grid >  div,
     .pro-grid >div > div{
-        width: 40vw;
-        height: 13vh;
+        width: 47vw;
+        height: 15vh;
 
     }
 
     .pro-grid img {
-        width: 35vw;
-        height: 10vh;
+        width: 43vw;
+        height: 11vh;
     }
 
     .pro-grid div:last-child p{
