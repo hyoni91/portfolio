@@ -155,30 +155,54 @@ const IntroModal = ({intro,setIntro,project})=>{
         url : ''
 
     }
-
     const project6 = {
-        name : 'PORTFOLIOサイト',
+        name : 'NEW BOOKSTORE',
         content : 
         <>
-        本プロジェクトは、個人開発およびチーム開発の成果をまとめたサイトです。
-        プロジェクトに使ったツールや内容の確認を含め、
-        サイトのリンク、動画試演、イメージなどで各プロジェクトを見ることができます。
-        
+        本プロジェクトは、既存のBOOK STOREプロジェクトの新しいバージョンです。
+        Next.jsを使用して、サイトのパフォーマンスを向上させ、SEO対策を行いました。
+        また、TypeScriptを使用して、コードの品質を向上させました。
+        新しい機能として、商品の検索、JWT認証、詳細ページのデザインを追加しました。        
         </>,
         detail : 
         <>
               <div className="detail">
                  <h6>Technical Skills</h6>
-                <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
-                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" /><br/>
-                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
-                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
-                <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/>
+                 <img src="https://img.shields.io/badge/Typescript-007acc?style=for-the-badge&logo=Typescript&logoColor=white" />
+                 <img src="https://img.shields.io/badge/Nest.js-E0234E?style=for-the-badge&logo=Next.js&logoColor=white" /><br/>
+                 <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=Vercel&logoColor=white" />
+                 <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=Prisma&logoColor=white" />
+                 <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white" />
+
             </div>
         </>,
-        url : 'https://hyoni91.github.io/portfolio/'
+        url : 'https://newbookstore-omega.vercel.app/'
 
     }
+
+    // const project6 = {
+    //     name : 'PORTFOLIOサイト',
+    //     content : 
+    //     <>
+    //     本プロジェクトは、個人開発およびチーム開発の成果をまとめたサイトです。
+    //     プロジェクトに使ったツールや内容の確認を含め、
+    //     サイトのリンク、動画試演、イメージなどで各プロジェクトを見ることができます。
+        
+    //     </>,
+    //     detail : 
+    //     <>
+    //           <div className="detail">
+    //              <h6>Technical Skills</h6>
+    //             <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
+    //             <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" /><br/>
+    //             <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
+    //             <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
+    //             <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/>
+    //         </div>
+    //     </>,
+    //     url : 'https://hyoni91.github.io/portfolio/'
+
+    // }
     useEffect(()=>{
         switch(project){
             case 1 : setIntro(project1)

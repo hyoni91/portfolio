@@ -38,7 +38,8 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
         break;
         case 5 : setVideos('/portfolio/videos/medi3.mp4')
         break;
-        case 6 : setVideos('/portfolio/videos/prt.mp4')
+        // case 6 : setVideos('/portfolio/videos/prt.mp4')
+        case 6 : setVideos('') //newbook
     }
     },[setVideos, project, setVideo])
     
@@ -95,7 +96,16 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
                 ]
             )
                 break;
+            // case 6 : setImages(
+            //     [
+            //         '/portfolio/images/pof1.png', 
+            //         '/portfolio/images/pof2.png',
+            //         '/portfolio/images/pof3.png',
+            //         '/portfolio/images/pof4.png'
+            //     ]
+            // )
             case 6 : setImages(
+                //newbook
                 [
                     '/portfolio/images/pof1.png', 
                     '/portfolio/images/pof2.png',

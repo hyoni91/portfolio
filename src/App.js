@@ -240,6 +240,15 @@ function App() {
           </div>
           <div onClick={()=>{setModalOpen(true); setProject(6)}}>
             {/* PORTFOLIO */}
+            <img src='/portfolio/images/new.png' />
+            <div>
+              <p>
+                ブックショップの新しいバージョン
+              </p>
+              <span>NewBookStore →</span>
+            </div>
+          </div>
+          {/* <div onClick={()=>{setModalOpen(true); setProject(6)}}>
             <img src='/portfolio/images/port.png' />
             <div>
               <p>
@@ -247,7 +256,7 @@ function App() {
               </p>
               <span>PORTFOLIO →</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </Section>
       <Section id='contact' bgColor='rgb(255, 255, 255, 1)' className='pro-section'>
