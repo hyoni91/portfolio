@@ -107,10 +107,10 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
             case 6 : setImages(
                 //newbook
                 [
-                    '/portfolio/images/pof1.png', 
-                    '/portfolio/images/pof2.png',
-                    '/portfolio/images/pof3.png',
-                    '/portfolio/images/pof4.png'
+                    '/portfolio/images/new.png', 
+                    '/portfolio/images/new1.png', 
+                    '/portfolio/images/new2.png',
+                    '/portfolio/images/new3.png',
                 ]
             )
             

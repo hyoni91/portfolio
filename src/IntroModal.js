@@ -34,6 +34,7 @@ const IntroModal = ({intro,setIntro,project})=>{
              本プロジェクトは、本をカテゴリ別に分類して確認できます。また、アカウント登録をして、お気に入りの本をカゴに入れることが可能です。
             カゴの詳細ページでは本の情報や数量変更、削除などの機能も実装しております。
             権限がADMINの場合は本の登録、会員情報の確認及び検索機能の操作が可能になります。
+            
             </div>
         </>,
         detail : 
@@ -169,9 +170,10 @@ const IntroModal = ({intro,setIntro,project})=>{
               <div className="detail">
                  <h6>Technical Skills</h6>
                  <img src="https://img.shields.io/badge/Typescript-007acc?style=for-the-badge&logo=Typescript&logoColor=white" />
-                 <img src="https://img.shields.io/badge/Nest.js-E0234E?style=for-the-badge&logo=Next.js&logoColor=white" /><br/>
-                 <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=Vercel&logoColor=white" />
+                 <img src="https://img.shields.io/badge/Nest.js-E0234E?style=for-the-badge&logo=Next.js&logoColor=white" />
+                 <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=Vercel&logoColor=white" /><br/>
                  <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=Prisma&logoColor=white" />
+                 <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=MariaDB&logoColor=white" />
                  <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white" />
 
             </div>
