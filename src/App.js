@@ -57,6 +57,23 @@ function App() {
   const [project, setProject] = useState()
   const [images, setImages] = useState([]) //이미지들 
   const [video, setVideo] = useState(false)
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 450);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // 초기 렌더링 시 체크
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -125,6 +142,12 @@ function App() {
         </div>
         <div className='aboutme-content'>
           <div className='aboutme-left'>
+            {
+              isMobile? 
+              <></>
+              :
+              null
+            }
             <div>
               <img ref={myImgRef} src={aboutme} alt='About Me' className='myimg' />
             </div>
@@ -152,13 +175,17 @@ function App() {
               <h3>Learning Journey</h3>
               <div className='learn'>
                   スクール名:グリーンアカデミー（韓国）<br/>
-                  課程:スマートヘルスケアWebサービス開発(6ヶ月)<br/>
-                  【学習内容】<br/>
                   - HTML、CSS、JavaScriptの基礎およびWeb画面の実装<br/>
                   - Javaプログラミングの基礎と実践<br/>
                   - MariaDBを用いたSQLデータベースの基礎知識<br/>
                   - Spring MVCを基盤としたWebプログラミングの実践<br/>
-                  - Pythonの基礎 <br/>
+                  - チームプロジェクト「MediClick」実装<br/>
+              </div>         
+            </div>
+            <div>  
+              <h3>Certifications</h3>
+              <div className='certificate'>
+              - AWS Certified Cloud Practitioner
               </div>         
             </div>
             <div>
