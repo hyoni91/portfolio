@@ -73,7 +73,8 @@ export default function Aboutme() {
             {/* 태그 버튼 */}
                 <div className="tag-btns">
                     <div className="myimg-container">
-                    <img src='/portfolio/images/aboutme.png' alt="aboutme" />
+                        <div className="myimg-box"> </div>
+                        <img src='/portfolio/images/aboutme.png' alt="aboutme" />
                     </div>
                     <div >
                         {tags.map(tag => (
@@ -86,11 +87,11 @@ export default function Aboutme() {
                         </button>
                         ))}
                         <br/>
-                        <button >
-                            #blog
+                        <button type="button"  >
+                            <a href="https://github.com/hyoni91" target="_blank">#github</a>
                         </button>
                         <button>
-                            #github
+                            <a href="https://zenn.dev/hyoni" target="_blank">#blog</a>
                         </button>
                         <p className="category">タグを選択してください</p>
 

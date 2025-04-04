@@ -14,7 +14,7 @@ import Aboutme from './Aboutme';
 
 
 const Section = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,6 +22,7 @@ const Section = styled.div`
   background:  ${(props) => props.bgColor ? props.bgColor : null      
     }
 `;
+
 
 function App() {
   // email
@@ -49,7 +50,6 @@ function App() {
 
   const h1 = useRef();
   const ul = useRef();  
-  const myImgRef = useRef();
   const [scrollY, setScrollY] = useState(0); //스크롤 위치 상태
   const [intro, setIntro] = useState({ })
   const [project, setProject] = useState()
@@ -123,12 +123,8 @@ function App() {
 
       <Section id='about' bgColor='rgb(255, 255, 255, 1)' className='pro-section' >
         <Aboutme />
-       
       </Section>
       <Section id='projects' className='pro-section'>
-        <div className='pro-div'>
-          <h1>PROJECTS</h1>
-        </div>
         <div className='pro-grid'>
           <div >
             {/* TODO LIST */}
@@ -193,11 +189,9 @@ function App() {
         </div>
       </Section>
       <Section id='contact' bgColor='rgb(255, 255, 255, 1)' className='pro-section'>
-        <div className='pro-div'>
-          <h1>CONTACT ME</h1>
-        </div>
         <div className='contact-flex'> 
           <div className='contact-content'>
+            <img src='/portfolio/images/kims.png' alt='contactme' />
             <h2>Thank you for watching!</h2>
             <div>
             ポートフォリオをご覧いただき、ありがとうございます。<br/>

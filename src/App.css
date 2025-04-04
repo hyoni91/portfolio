@@ -24,6 +24,7 @@ html, body {
   margin: 0 auto; 
 }
 
+
 /* menubar */
 .fixed-navbar {
   position: fixed;
@@ -140,6 +141,12 @@ span{
   width: 40%;
   font-size: 1.2vw;
   text-align: center;
+}
+
+.contact-content img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
 }
 
 .mail-content{
@@ -261,7 +268,7 @@ textarea{
     font-size: 0.3em;
     text-align: center;
   }
-  
+
   .mail-content{
     width: 80%;
     height: auto;
