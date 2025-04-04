@@ -30,11 +30,12 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(203, 203, 203, 0.8);
+  opacity: 0.8;
+  background-color: rgb(255, 255, 255);
   color: rgb(0, 0,0);
   z-index: 1000;
-  padding: 15px 25px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 35px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.19);
 }
 
 .fixed-navbar ul {
@@ -61,7 +62,7 @@ html, body {
 
 .fixed-navbar a:hover {
   cursor: pointer;
-  color: white;
+  color: #FFB84D;
   font-weight: 800;
 }
 

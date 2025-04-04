@@ -278,3 +278,121 @@
   }
 }
 
+/* 리뉴얼 */
+
+.tag-container {
+  width: 1250px;
+  margin: auto;
+  display: flex;
+  height: 80vh;
+  gap: 1px;
+  justify-content: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  padding: 0.5vw;
+  /* border: 1px solid red; */
+}
+
+.tag-btns {
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5vw;
+  margin-top: 3px;
+  /* border: 1px solid black; */
+
+}
+
+.tag-btns  button {
+  background-color: #3f3f3f;
+  border: none;
+  color: #ffffff;
+  width: 100px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+  cursor: pointer;
+  /* border-radius: 5px; */
+  box-shadow: 0 8px 5px rgba(233, 238, 195, 0.19), 2px 1.2px rgba(0,0,0,0.23);
+
+}
+
+.tag-btns button:hover {
+  background-color: #FFB84D;
+  color: #000;
+  box-shadow: 0 7px 7px rgba(0,0,0,0.19), 0 6px 10px rgba(0,0,0,0.23);
+}
+
+.myimg-container > img{
+  width: 38vw;
+  margin: auto;
+  box-shadow: 0 7px 10px rgba(0,0,0,0.19), 0 6px 10px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  margin-top: 2vw;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* 아래에서 위로 올라오며 나타남 */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* 원래 위치로 */
+  }
+}
+
+.tag-content{
+  width: 85%;
+  font-size: 0.7em;
+  font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+  padding: 1vw;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-bottom: 2vw;
+  line-height: 2;
+  opacity: 0;  
+  transform: translateY(20px); 
+  animation: fadeIn 1s ease-out forwards; 
+  /* border: 1px solid blue; */
+}
+
+.tag-content h3{
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+}
+
+.tag-content h4{
+  font-family: 'Roboto', 'Noto Sans JP', sans-serif;  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  color: #154745;
+  font-weight: 700;
+  font-size: normal;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  padding: 0.8vw 0vw;
+}
+
+
+.tag-content.active {
+  animation: fadeIn 1s ease-out forwards; 
+}
+
+.category{
+  font-size: 0.4em;
+  text-align: left;
+  font-family: 'sans-serif';
+  color: #000;
+  margin-top: 10px;
+}
+
+.tag-content span{
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  color: #3f3f3f;
+  font-weight: 550;
+}

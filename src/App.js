@@ -3,15 +3,13 @@ import styled from 'styled-components';
 import './App.css';
 import './Aboutme.css'
 import './Projects.css'
-import aboutme from './images/aboutme.jpg';
 import ReactModal from 'react-modal';
 import IntroModal from './IntroModal';
-import { Link } from 'react-router-dom';
 import ImageModal from './ImageModal';
-// import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import emailjs from '@emailjs/browser';
+import Aboutme from './Aboutme';
 
 
 
@@ -97,19 +95,6 @@ function App() {
   }, [scrollY]); 
 
 
-  useEffect(() => {
-    if (myImgRef.current) {
-      const imgPositionTop = myImgRef.current.getBoundingClientRect().top;
-      const imgPositionBottom = myImgRef.current.getBoundingClientRect().bottom; 
-      const windowHeight = window.innerHeight;
-
-      if (imgPositionTop < windowHeight && imgPositionBottom > 0) {
-        myImgRef.current.classList.add('fade-in');
-      } else {
-        myImgRef.current.classList.remove('fade-in');
-      }
-    }
-  }, [scrollY]);
 
 
    const [modalOpen, setModalOpen] = useState(false)
@@ -137,78 +122,8 @@ function App() {
       </Section>
 
       <Section id='about' bgColor='rgb(255, 255, 255, 1)' className='pro-section' >
-        <div className='pro-div'>
-          <h1>ABOUT ME</h1>
-        </div>
-        <div className='aboutme-content'>
-          <div className='aboutme-left'>
-            {
-              isMobile? 
-              <></>
-              :
-              null
-            }
-            <div>
-              <img ref={myImgRef} src={aboutme} alt='About Me' className='myimg' />
-            </div>
-              <div className='whoami'>
-                <h3>WHO AM I?</h3>
-                <div>
-                  エンジニアとして第一歩踏み出したばかりのキムヒョンギョンです。
-                  こちらのサイトでは、ユーザー様が使いやすいウェブサイトを作るために
-                  色々工夫して作り上げたプロジェクトを紹介ております。
-                  まだまだな技術ですが、どうか優しい目でご覧ください。
-                </div>
-                <div className='about-icon'>
-                  <a href='https://github.com/hyoni91' target='_blank' rel="noopener noreferrer">
-                  <i className="bi bi-github"></i>
-                  </a>  
-                  <a href='https://zenn.dev/hyoni' target='_blank' rel="noopener noreferrer">
-                  <i className="bi bi-chat-heart"></i>
-                </a>
-                </div>
-         
-              </div>
-            </div>  
-          <div className='aboutme-rigth'>
-            <div>  
-              <h3>Learning Journey</h3>
-              <div className='learn'>
-                  スクール名:グリーンアカデミー（韓国）<br/>
-                  - HTML、CSS、JavaScriptの基礎およびWeb画面の実装<br/>
-                  - Javaプログラミングの基礎と実践<br/>
-                  - MariaDBを用いたSQLデータベースの基礎知識<br/>
-                  - Spring MVCを基盤としたWebプログラミングの実践<br/>
-                  - チームプロジェクト「MediClick」実装<br/>
-              </div>         
-            </div>
-            <div>  
-              <h3>Certifications</h3>
-              <div className='certificate'>
-              - AWS Certified Cloud Practitioner
-              </div>         
-            </div>
-            <div>
-              <h3>Technical Skills</h3>
-              <div className='skills'>
-                <h5>Backend Development</h5>
-                <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white" />
-                <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
-                <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white" />
-                <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/>                <h5>Frontend Development</h5>
-                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" />
-                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
-                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
-                <h5>Database Management</h5>
-                <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=MariaDB&logoColor=white" />
-                {/* <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white" /> */}
-                <h5></h5>
-                <h5>Version Control & Deployment</h5>
-                <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/>
-               </div>
-            </div>
-          </div>
-        </div>
+        <Aboutme />
+       
       </Section>
       <Section id='projects' className='pro-section'>
         <div className='pro-div'>
@@ -222,7 +137,7 @@ function App() {
               <p>
                 簡単なメモやスケジュールの登録可能
               </p>
-              <span　onClick={()=>{setModalOpen(true); setProject(1) }}>TODO LIST →</span>
+              <span onClick={()=>{setModalOpen(true); setProject(1) }}>TODO LIST →</span>
             </div>
           </div>
           <div >
@@ -275,15 +190,6 @@ function App() {
               <span>NewBookStore →</span>
             </div>
           </div>
-          {/* <div onClick={()=>{setModalOpen(true); setProject(6)}}>
-            <img src='/portfolio/images/port.png' />
-            <div>
-              <p>
-                KIM HYUNKYUNGのポートフォリオサイト
-              </p>
-              <span>PORTFOLIO →</span>
-            </div>
-          </div> */}
         </div>
       </Section>
       <Section id='contact' bgColor='rgb(255, 255, 255, 1)' className='pro-section'>
@@ -345,9 +251,6 @@ function App() {
               }
             }}
             >
-              {/* <div className="intro-x"> 
-              <i className="bi bi-x-square" />             
-              </div> */}
               <div className='modal-wrap'>
                 <div>
                 <IntroModal intro={intro} setIntro={setIntro} project={project}/>
@@ -366,3 +269,4 @@ function App() {
 }
 
 export default App;
+
