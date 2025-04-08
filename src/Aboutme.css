@@ -334,18 +334,8 @@
   margin-top: 2vw;
   position: relative;
   z-index: 10;
-  
+  animation: fadeIn 1s ease-out forwards;  
 }
-
-/* .myimg-box{
-  width: 38vw;
-  height: 50vh;
-  position: absolute;
-  top: 9px;
-  right: 59%;
-  z-index: 0;
-  background-color: #FFB84D;
-} */
 
 @keyframes fadeIn {
   0% {

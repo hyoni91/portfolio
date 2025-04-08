@@ -18,7 +18,7 @@ export default function Aboutme() {
         { id: "hyoni", label: "#hyoni", 
             content: 
             <>
-                <h3>#HYONI</h3>
+                <h3>#Hyoni</h3>
                 <h4>フルスタックを目指す</h4>
                 <p>こんにちは！キムヒョンギョンです。出身は韓国で現在は沖縄に住んでおります。</p>
                 <p>私はパン作り、読書、旅行が好きで、最近はウェブ開発に興味を持ち、学習しています。</p>

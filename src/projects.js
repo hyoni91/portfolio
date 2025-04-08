@@ -1,0 +1,49 @@
+
+
+
+const projects = [
+    {
+      id: 1,
+      title: 'TODO LIST',
+      description: '簡単なメモやスケジュールの登録可能',
+      image: '/portfolio/images/todo.png',
+      icons:<i class="bi bi-check-all"></i>,
+    },
+    {
+      id: 2,
+      title: 'BOOK STORE',
+      description: 'ブックショップのサイトを実装',
+      image: '/portfolio/images/bookmain.jpg',
+      icons:<i class="bi bi-shop"></i>,
+    },
+    {
+      id: 3,
+      title: 'MEDI CLICK1',
+      description: '病院のリアルタイムの予約と予約キャンセルの機能を実装',
+      image: '/portfolio/images/medi1.jpg',
+      icons: <i class="bi bi-hospital"></i>,
+    },
+    {
+      id: 4,
+      title: 'MEDI CLICK2',
+      description: 'リアルタイムの温度管理ができるダッシュボードを作成',
+      image: '/portfolio/images/medi2.jpg',
+      icons: <i class="bi bi-hospital"></i>,
+
+    },
+    {
+      id: 5,
+      title: 'MEDI CLICK3',
+      description: '医療用品の受注プロセスを実装',
+      image: '/portfolio/images/medi3.png',
+      icons: <i class="bi bi-hospital"></i>,
+
+    },
+    {
+      id: 6,
+      title: 'NewBookStore',
+      description: 'ブックショップの新しいバージョン',
+      image: '/portfolio/images/new.png',
+    },
+  ];
+export default projects;

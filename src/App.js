@@ -10,6 +10,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import emailjs from '@emailjs/browser';
 import Aboutme from './Aboutme';
+import projects from './projects';
 
 
 
@@ -49,7 +50,9 @@ function App() {
 
 
   const h1 = useRef();
-  const ul = useRef();  
+  // const ul = useRef();  
+  const main_btn = useRef();
+  const nav = useRef();
   const [scrollY, setScrollY] = useState(0); //스크롤 위치 상태
   const [intro, setIntro] = useState({ })
   const [project, setProject] = useState()
@@ -61,12 +64,9 @@ function App() {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 450);
     };
-
     window.addEventListener("resize", handleResize);
-
     // 초기 렌더링 시 체크
     handleResize();
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -89,9 +89,15 @@ function App() {
   useEffect(() => {
     if (scrollY > 100) {
       h1.current.classList.remove('visible')
+      // main_btn.current.classList.remove('visible')
+      nav.current.classList.remove('visible')
     } else {
       h1.current.classList.add('visible');
+      // main_btn.current.classList.add('visible')
+      nav.current.classList.add('visible')
     }
+
+
   }, [scrollY]); 
 
 
@@ -107,7 +113,7 @@ function App() {
   return (
     <div className='wrap'>
       {/* Fixed Navigation Bar */}
-      <nav className="fixed-navbar">
+      <nav ref={nav} className="fixed-navbar">
         <ul>
           <li><a href="#main">HOME</a></li>
           <li><a href="#about">ABOUT ME</a></li>
@@ -115,79 +121,30 @@ function App() {
           <li><a href="#contact">CONTACT ME</a></li>
         </ul>
       </nav>
-      <Section id='main'>
+      <Section id='main'className='main-section'>
         <div className="main">
-          <h1 ref={h1}>WELCOME<br />I'M HYONI</h1>    
+           <h1 ref={h1}>WELCOME<br />I'M HYONI</h1>
+           {/* <button ref={main_btn}>View Projects</button> */}
         </div>
       </Section>
-
       <Section id='about' bgColor='rgb(255, 255, 255, 1)' className='pro-section' >
         <Aboutme />
       </Section>
       <Section id='projects' className='pro-section'>
-        <div className='pro-grid'>
-          <div >
-            {/* TODO LIST */}
-            <img src='/portfolio/images/todo.png' />
-            <div>
-              <p>
-                簡単なメモやスケジュールの登録可能
-              </p>
-              <span onClick={()=>{setModalOpen(true); setProject(1) }}>TODO LIST →</span>
-            </div>
+          <div className='pro-grid'>
+            {projects.map((project) => (
+              <div key={project.id} onClick={() => { setModalOpen(true); setProject(project.id); }}>
+                <img src={project.image} alt={project.title} />
+                <div>
+                  <p>{project.description}</p>
+                  <span>{project.title} →</span>
+                </div>
+              </div>
+            ))}
           </div>
-          <div >
-            {/* BOOK STORE */}
-            <img src='/portfolio/images/bookmain.jpg' />
-            <div>
-              <p>
-                ブックショップのサイトを実装
-              </p>
-              <span onClick={()=>{setModalOpen(true); setProject(2)}}>BOOK STORE →</span>
-            </div>
-          </div>
-          <div onClick={()=>{setModalOpen(true); setProject(3)}}>
-            {/* MEDI CLICK1 */}
-            <img src='/portfolio/images/medi1.jpg' />
-            <div>
-              <p>
-                病院のリアルタイムの予約と予約キャンセルの機能を実装
-              </p>
-              <span>MEDI CLICK1 →</span>
-            </div>
-          </div>
-          <div onClick={()=>{setModalOpen(true); setProject(4)}}>
-            {/* MEDI CLICK2 */}
-            <img src='/portfolio/images/medi2.jpg' />
-            <div>
-              <p>
-                リアルタイムの温度管理ができるダッシュボードを作成
-              </p>
-              <span>MEDI CLICK2 →</span>
-            </div>
-          </div>
-          <div onClick={()=>{setModalOpen(true); setProject(5)}}>
-            {/* MEDI CLICK3 */}
-            <img src='/portfolio/images/medi3.png' />
-            <div>
-              <p>
-                医療用品の受注プロセスを実装
-              </p>
-              <span>MEDI CLICK3 →</span>
-            </div>
-          </div>
-          <div onClick={()=>{setModalOpen(true); setProject(6)}}>
-            {/* PORTFOLIO */}
-            <img src='/portfolio/images/new.png' />
-            <div>
-              <p>
-                ブックショップの新しいバージョン
-              </p>
-              <span>NewBookStore →</span>
-            </div>
-          </div>
-        </div>
-      </Section>
+        </Section>
+      
+
       <Section id='contact' bgColor='rgb(255, 255, 255, 1)' className='pro-section'>
         <div className='contact-flex'> 
           <div className='contact-content'>
