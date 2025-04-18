@@ -11,247 +11,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/* 
-.pro-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; 
-    padding: 10px;
-    position: relative; 
-    margin: auto;
-  }
-  
-
-.aboutme-content{
-    max-width: 1600px; 
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    gap: 3vw;
-} */
-
-/* 
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(22px); 
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.myimg {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-in-out, transform 2s ease-in-out;
-  object-fit: cover;
-}
-
-.myimg.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.aboutme-left{
-    width: 40%;
-    height: 75vh; 
-    position: relative;
-    background-color: #E3DCCD;
-    padding: 0.5vw;
-    overflow: auto; 
-}
-
-.aboutme-left div{
-    font-size: 0.8em;
-}
-
-.about-icon{
-  text-align: right;
-}
-.about-icon i{
-  font-size: 1.2em;
-}
-
-.aboutme-rigth{
-    width: 35%; 
-    height: 75vh;
-    padding: 1.5vw;
-    margin-bottom: 2vw;
-    overflow: auto; 
-}
-.whoami{
-  margin-top: 2.5vw;
-}
-
-.aboutme-rigth h3,
-.whoami h3  {
-  font-family: 'GmarketSansMedium';
-  font-weight: 700;
-  font-size: 0.75em;
-  margin-top: 1vw;
-  display: inline-block;
-  padding: 0.8vw 0vw;
-}
-
-
-
-.whoami > h3,
-.whoami > div{
-  padding: 0.5vw;
-  margin-left: 3vw;
-  margin-right: 2vw;
-}
-
-.whoami > div{
-  font-size: 0.6em;
-  font-family: "Noto Sans JP", serif;
-}
-
-.aboutme-rigth h5{
-  font-size: 0.7em;
-  margin-top: 0.3vw;
-}
-
-.aboutme-rigth div{
-  font-size: 0.66em;
-}
-
-.skills img{
-  margin-right: 2px;
-}
-
- */
-
-/* 
-@media (max-width: 1024px) {
-  .myimg {
-    max-width: 30vw; 
-    margin-left: 6vw;
-  }
-
-  .aboutme-left{
-    width: 44%; 
-  }
-  .aboutme-right {
-    width: 50%; 
- 
-  }
-
-  .aboutme-right h3,
-  .whoami h3{
-    font-size: 0.85em;
-  }
-
-  .aboutme-rigth{
-    font-size: 0.8em;
-  }
-
-  .whoami div,
-  .learn{
-    font-size: 0.55em;
-    letter-spacing: 1px;
-  }
-
-  .skills img{
-    width: 57px;
-    height: 17px;
-  }
-
-
-}
-
-
-
-@media (max-width: 768px) {
-  .myimg {
-    max-width: 35vw; 
-    margin-left: 6vw;
-  }
-
-  .aboutme-left, .aboutme-right {
-    width: 45%; 
-  }
-
-  #name1, #name2 {
-    font-size: 1vw; 
-    width: 30%; 
-    left: 60%;
-  }
-
-  .aboutme-right h3,
-  .whoami h3{
-    font-size: 0.8em;
-  }
-
-  .aboutme-rigth{
-    font-size: 0.8em;
-  }
-
-  .whoami div,
-  .learn{
-    font-size: 0.5em;
-  }
-
-  .skills img{
-    width: 57px;
-    height: 17px;
-  }
-}
-
-@media (max-width: 480px) {
-  .aboutme-content{
-    margin-bottom: 10px;
-    width: 82vw;
-    height: 100%;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-  } 
-  .aboutme-left{
-    display: flex;
-    width: 100%;
-    height: 30vh; 
-  }
-
-  .myimg {
-    width: 20vw; 
-    margin-top:12vw ;
-    margin-left: 5vw;
-  }
-
-
-  .aboutme-rigth{
-    margin-bottom: 2vw;
-    width: 90%;
-    height: 50vh;
-    font-size: 0.6em;
-    overflow: auto; 
-  }
-
-  .aboutme-left div{
-    font-size: 0.6em;
-  }
-
-  .skills img{
-    width: 50px;
-    height: 15px;
-  }
-  .aboutme-right h3,
-  .whoami h3{
-    font-size: 0.6em;
-  }
-
-  .whoami div,
-  .learn{
-    font-size: 0.4em;
-  }
-} */
 
 /* 리뉴얼 */
 @keyframes gradientAnimation {
@@ -266,17 +25,9 @@
   }
 }
 
-/*
-.tag-container {
-  animation: gradientAnimation 10s ease infinite;
-  background-size: 400% 400%; 
-  height: 100vh;
-}
-*/
-
 
 .tag-container {
-  width: 1250px;
+  width: 100vw;
   margin: auto;
   display: flex;
   height: 80vh;
@@ -289,14 +40,14 @@
 }
 
 .tag-btns {
-  width:50%;
+  width:37vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding: 0.5vw;
   margin-top: 3px;
-
+  font-size: 0.8em;
 }
 
 .tag-btns  button {
@@ -308,7 +59,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 0.65em;
   margin: 2px;
   cursor: pointer;
   box-shadow: 0 8px 5px rgba(233, 238, 195, 0.19), 2px 1.2px rgba(0,0,0,0.23);
@@ -349,7 +100,7 @@
 }
 
 .tag-content{
-  width: 85%;
+  width: 42vw;
   font-size: 0.7em;
   font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
   padding: 1vw;
@@ -394,3 +145,6 @@
   color: #3f3f3f;
   font-weight: 550;
 }
+
+  
+
