@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'SBAggroB';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
   font-weight: normal;
@@ -12,10 +12,9 @@
   font-style: normal;
 }
 
-/* 리뉴얼 */
 @keyframes gradientAnimation {
   0% {
-    background: linear-gradient(45deg, #A7C7E7, #F5E1D3); /* 부드러운 파스텔 그라디언트 */
+    background: linear-gradient(45deg, #A7C7E7, #F5E1D3); 
   }
   50% {
     background: linear-gradient(45deg, #E0F4F1, #B3D9FF);
@@ -95,7 +94,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* 원래 위치로 */
+    transform: translateY(0); 
   }
 }
 
@@ -146,5 +145,4 @@
   font-weight: 550;
 }
 
-  
-
+   */

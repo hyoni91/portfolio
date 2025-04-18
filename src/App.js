@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import './App.css';
-import './Aboutme.css'
-import './Projects.css'
+// import './Aboume2.css'
+// import './Projects.css'
+import './Projects2.css'
 import ReactModal from 'react-modal';
 import IntroModal from './IntroModal';
 import ImageModal from './ImageModal';
@@ -11,6 +12,12 @@ import 'slick-carousel/slick/slick-theme.css';
 import emailjs from '@emailjs/browser';
 import Aboutme from './Aboutme';
 import projects from './projects';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
+
 
 
 
@@ -51,7 +58,7 @@ function App() {
 
   const h1 = useRef();
   // const ul = useRef();  
-  const main_btn = useRef();
+  // const main_btn = useRef();
   const nav = useRef();
   const [scrollY, setScrollY] = useState(0); //스크롤 위치 상태
   const [intro, setIntro] = useState({ })
@@ -143,6 +150,7 @@ function App() {
             ))}
           </div>
         </Section>
+        
       
 
       <Section id='contact' bgColor='rgb(255, 255, 255, 1)' className='pro-section'>
