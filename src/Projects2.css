@@ -10,6 +10,7 @@
     font-family: 'Pretendard', 'Noto Sans JP', sans-serif;
 }
 
+
 .pro-grid > div {
     position: relative;
     background-color: white;
@@ -208,11 +209,16 @@
 }
 
 @media (max-width: 450px) {
+
+    .pro-section {
+       margin-top: 100px;
+    }
     .pro-grid {
         grid-template-columns: 1fr;
         gap: 5px;
     }
 
+   
     .pro-grid > div {
         height: 30vh;
     }
