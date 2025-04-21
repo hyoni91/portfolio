@@ -1,4 +1,3 @@
-/* 기본 갤러리 스타일 */
 .pro-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
@@ -39,7 +38,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     opacity: 0;
     display: flex;
@@ -65,7 +64,6 @@
     margin-top: 20px;
 }
 
-/* 모달 스타일 */
 .modal-wrap {
     display: flex;
     justify-content: center;
@@ -148,7 +146,6 @@
     color: blue;
 }
 
-/* 비디오 태그 */
 .videoTag {
     width: 100%;
     height: auto;
@@ -157,9 +154,7 @@
     margin-top: 10px;
 }
 
-/* 반응형 디자인 */
 
-/* 1024px 이하 (태블릿) */
 @media (max-width: 1024px) {
     .pro-grid {
         grid-template-columns: repeat(2, minmax(250px, 1fr));
@@ -186,7 +181,6 @@
     }
 }
 
-/* 768px 이하 (모바일) */
 @media (max-width: 768px) {
     .pro-grid {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
@@ -213,7 +207,6 @@
     }
 }
 
-/* 450px 이하 (모바일 작은 화면) */
 @media (max-width: 450px) {
     .pro-grid {
         grid-template-columns: 1fr;

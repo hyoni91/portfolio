@@ -12,12 +12,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import emailjs from '@emailjs/browser';
 import Aboutme from './Aboutme';
 import projects from './projects';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar';
-
 
 
 
@@ -57,13 +51,11 @@ function App() {
 
 
   const h1 = useRef();
-  // const ul = useRef();  
-  // const main_btn = useRef();
   const nav = useRef();
   const [scrollY, setScrollY] = useState(0); //스크롤 위치 상태
   const [intro, setIntro] = useState({ })
   const [project, setProject] = useState()
-  const [images, setImages] = useState([]) //이미지들 
+  const [images, setImages] = useState([]) 
   const [video, setVideo] = useState(false)
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
 
@@ -96,18 +88,14 @@ function App() {
   useEffect(() => {
     if (scrollY > 100) {
       h1.current.classList.remove('visible')
-      // main_btn.current.classList.remove('visible')
       nav.current.classList.remove('visible')
     } else {
       h1.current.classList.add('visible');
-      // main_btn.current.classList.add('visible')
       nav.current.classList.add('visible')
     }
 
 
   }, [scrollY]); 
-
-
 
 
    const [modalOpen, setModalOpen] = useState(false)
@@ -119,7 +107,6 @@ function App() {
 
   return (
     <div className='wrap'>
-      {/* Fixed Navigation Bar */}
       <nav ref={nav} className="fixed-navbar">
         <ul>
           <li><a href="#main">HOME</a></li>
@@ -131,7 +118,6 @@ function App() {
       <Section id='main'className='main-section'>
         <div className="main">
            <h1 ref={h1}>WELCOME<br />I'M HYONI</h1>
-           {/* <button ref={main_btn}>View Projects</button> */}
         </div>
       </Section>
       <Section id='about' bgColor='rgb(255, 255, 255, 1)' className='pro-section' >
@@ -174,7 +160,15 @@ function App() {
              <input className='mail-btn' type="submit" value="SEND" />     
            </form>
         </div>
+       
       </Section>
+        <footer className='footer'>
+          <div>
+            <p>Copyright © 2025 HYONI. All rights reserved.</p>
+          </div>
+        </footer>
+      
+        
       {
         modalOpen?
         <ReactModal
@@ -223,6 +217,8 @@ function App() {
         :
         null
       }
+
+     
     </div>
   );
 }

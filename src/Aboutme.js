@@ -87,11 +87,14 @@ export default function Aboutme() {
                         </button>
                         ))}
                         <br/>
-                        <button type="button"  >
+                        <button type="button" >
                             <a href="https://github.com/hyoni91" target="_blank">#github</a>
                         </button>
-                        <button>
+                        <button type="button">
                             <a href="https://zenn.dev/hyoni" target="_blank">#blog</a>
+                        </button>
+                        <button type="button">
+                            <a href="https://x.com/hyoni_green" target="_blank">#X</a>
                         </button>
                         <p className="category">タグを選択してください</p>
 
