@@ -148,41 +148,16 @@
     .pro-grid {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
         grid-template-rows: auto;
-        gap: 10px;
     }
-    .pro-grid >  div,
-    .pro-grid >div > div{
-        width: 34vw;
-        height: 25vh;
-
-    }
-
-    .pro-grid img {
-        width: 31vw;
-        height: 20vh;
-    } 
-    
+ 
 }
 
 @media (max-width: 768px) {
     .pro-grid {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
         grid-template-rows: auto;
-        gap: 8px;
     }
 
-    
-    .pro-grid >  div,
-    .pro-grid >div > div{
-        width: 42vw;
-        height: 25vh;
-
-    }
-
-    .pro-grid img {
-        width: 38vw;
-        height: 20vh;
-    }
 
     .modal-wrap {
         flex-direction: column;
@@ -256,25 +231,13 @@
   
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .pro-grid {
         grid-template-columns: repeat(1, minmax(200px, 1fr));
         grid-template-rows: auto;
-        gap: 9px;
-        overflow: auto;
-    }
-
-    .pro-grid >  div,
-    .pro-grid >div > div{
-        width: 82vw;
-        height: 35vh;
 
     }
 
-    .pro-grid img {
-        width: 77vw;
-        height: 30vh;
-    }
 
     .pro-grid div:last-child p{
         font-size: 0.8em;
