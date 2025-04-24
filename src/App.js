@@ -130,7 +130,7 @@ function App() {
                 <img src={project.image} alt={project.title} />
                 <div>
                   <p>{project.description}</p>
-                  <span>{project.title} →</span>
+                  <span>{project.title}</span>
                 </div>
               </div>
             ))}
@@ -189,8 +189,9 @@ function App() {
                 position: 'absolute',
                 width: '87vw',
                 maxWidth:'1200px',
-                height: '77vh',
-                maxHeight : '800px',
+                minHeight: '77vh',
+                // maxHeight : '800px',
+                maxheight:'auto',
                 top: '10%',
                 left: '8%',
                 right: '10%',
