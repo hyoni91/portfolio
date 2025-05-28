@@ -255,7 +255,6 @@ textarea{
 
   .contact-flex{
     display: flex;
-    /* flex-direction: column; */
   }
   .contact-content{
     width: 45%;
@@ -268,7 +267,6 @@ textarea{
     width: 50%;
     height: auto;
     font-size: 0.75em;
-    /* margin-bottom: 30px; */
   }
   .mail-content > input{
   width: 90%;
@@ -289,13 +287,11 @@ textarea{
   .contact-content img{
     width: 160px;
     height: 160px;
-    /* margin-top: 30px; */
   }
 
 }
 
 @media (max-width: 480px) {
-
 
 
   h1 {

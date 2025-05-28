@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Aboutme2.css";
+import "./styles/Aboutme.css";
 
 export default function Aboutme() {
     const [selectedTag, setSelectedTag] = useState(null);

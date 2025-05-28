@@ -1,9 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import './App.css';
-// import './Aboume2.css'
-// import './Projects.css'
-import './Projects2.css'
+import './styles/App.css';
+import './styles/Projects2.css'
 import ReactModal from 'react-modal';
 import IntroModal from './IntroModal';
 import ImageModal from './ImageModal';
@@ -11,7 +9,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import emailjs from '@emailjs/browser';
 import Aboutme from './Aboutme';
-import projects from './projects';
+import projects from './utils/projects';
 
 
 
