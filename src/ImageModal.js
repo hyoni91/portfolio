@@ -27,8 +27,9 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
     useEffect(()=>{
     console.log(project)
 
+    // eslint-disable-next-line default-case
     switch(project){
-        case 1 : setVideos('/portfolio/videos/todo.mp4')
+        case 1 : setVideos('') //newbook
         break;
         case 2 : setVideos('/portfolio/videos/bookstore.mp4')
         break;
@@ -38,23 +39,23 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
         break;
         case 5 : setVideos('/portfolio/videos/medi3.mp4')
         break;
-        // case 6 : setVideos('/portfolio/videos/prt.mp4')
-        case 6 : setVideos('') //newbook
+        case 6 : setVideos('/portfolio/videos/todo.mp4')
+
     }
     },[setVideos, project, setVideo])
     
 
       useEffect(()=>{
+        // eslint-disable-next-line default-case
         switch(project){
             case 1 : setImages(
                 [
-                    '/portfolio/images/todo1.png', 
-                    '/portfolio/images/todo2.png',
-                    '/portfolio/images/todo3.png',
-                    '/portfolio/images/todo4.png'
+                    '/portfolio/images/new.png', 
+                    '/portfolio/images/new1.png', 
+                    '/portfolio/images/new2.png',
+                    '/portfolio/images/new3.png',
                 ]
             )
-            
                 break;
             case 2 : setImages(
                 [
@@ -96,21 +97,12 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
                 ]
             )
                 break;
-            // case 6 : setImages(
-            //     [
-            //         '/portfolio/images/pof1.png', 
-            //         '/portfolio/images/pof2.png',
-            //         '/portfolio/images/pof3.png',
-            //         '/portfolio/images/pof4.png'
-            //     ]
-            // )
             case 6 : setImages(
-                //newbook
                 [
-                    '/portfolio/images/new.png', 
-                    '/portfolio/images/new1.png', 
-                    '/portfolio/images/new2.png',
-                    '/portfolio/images/new3.png',
+                    '/portfolio/images/todo1.png', 
+                    '/portfolio/images/todo2.png',
+                    '/portfolio/images/todo3.png',
+                    '/portfolio/images/todo4.png'
                 ]
             )
             

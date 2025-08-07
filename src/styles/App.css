@@ -30,9 +30,10 @@ html, body {
 /* menubar */
 .fixed-navbar {
   /* position: fixed; */
+  font-size: 1.2rem;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   opacity: 0.8;
   /* background-color: rgb(255, 255, 255,0.6); */
   color: rgb(0, 0,0);

@@ -1,10 +1,10 @@
 const projects = [
     {
       id: 1,
-      title: 'TODO LIST',
-      description: '簡単なメモやスケジュールの登録可能',
-      image: '/portfolio/images/mytodo.png',
-      icons:<i class="bi bi-check-all"></i>,
+      title: 'NewBookStore',
+      description: 'ブックショップの新しいバージョン',
+      image: '/portfolio/images/new.png',
+
     },
     {
       id: 2,
@@ -38,9 +38,11 @@ const projects = [
     },
     {
       id: 6,
-      title: 'NewBookStore',
-      description: 'ブックショップの新しいバージョン',
-      image: '/portfolio/images/new.png',
+      title: 'TODO LIST',
+      description: '簡単なメモやスケジュールの登録可能',
+      image: '/portfolio/images/mytodo.png',
+      icons:<i class="bi bi-check-all"></i>,
+
     },
   ];
 export default projects;
