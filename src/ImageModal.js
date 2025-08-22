@@ -31,7 +31,8 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
     switch(project){
         case 1 : setVideos('') //newbook
         break;
-        case 2 : setVideos('/portfolio/videos/bookstore.mp4')
+        // case 2 : setVideos('/portfolio/videos/bookstore.mp4')
+        case 2 : setVideos('')
         break;
         case 3 : setVideos('/portfolio/videos/mediclick1.mp4')
         break;
@@ -59,14 +60,15 @@ const ImageModal = ({images,setImages,project, video, setVideo})=>{
                 break;
             case 2 : setImages(
                 [
-                    '/portfolio/images/book1.png',
-                   '/portfolio/images/book2.png',
-                   '/portfolio/images/book3.png',
-                   '/portfolio/images/book4.png',
-                   '/portfolio/images/book5.png',
-                   '/portfolio/images/book6.png',
-                   '/portfolio/images/book7.png',
-                   '/portfolio/images/book8.png',
+                    '/portfolio/images/game1.png',
+                   '/portfolio/images/game2.png',
+                   '/portfolio/images/game3.png',
+                   '/portfolio/images/game4.png',
+                   '/portfolio/images/game5.png',
+                   '/portfolio/images/game6.png',
+                //    '/portfolio/images/game7.png',
+                //    '/portfolio/images/game8.png',
+
                 ]
             )
                 break;

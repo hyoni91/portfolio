@@ -29,32 +29,28 @@ const IntroModal = ({intro,setIntro,project})=>{
     
 
     const project2 = {
-        name : 'BOOK STORE',
+        name : 'FALLING CATCHER',
         content : 
         <>
              <div>
-             本プロジェクトは、本をカテゴリ別に分類して確認できます。また、アカウント登録をして、お気に入りの本をカゴに入れることが可能です。
-            カゴの詳細ページでは本の情報や数量変更、削除などの機能も実装しております。
-            権限がADMINの場合は本の登録、会員情報の確認及び検索機能の操作が可能になります。
+             本プロジェクトは、落下する物体をキャッチするゲームです。
+            プレイヤーは、画面上部から落下してくる物体がキャッチゾーンに到達する前にキャッチすることを目指します。
+            制限時間は1分、MISSが10回以上だとゲームオーバーになります。
             
             </div>
         </>,
         detail : 
             <div className="detail">
                  <h6>Technical Skills</h6>
-                <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white" />
-                <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white" />
-                <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white" />
-                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" /><br/>
+                <img src="https://img.shields.io/badge/Typescript-F7DF1E?style=for-the-badge&logo=Typescript&logoColor=white" />
+                <img src="https://img.shields.io/badge/Nextjs-61DAFB?style=for-the-badge&logo=Nextjs&logoColor=white" /><br/>
                 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
                 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
-                <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=MariaDB&logoColor=white" />
                 <img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/><br/>
-                <img src="https://img.shields.io/badge/Amazon AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white"/>
 
             </div>
             ,
-       url : 'https://www.hyoni.click/'
+       url : 'https://hyoni91.github.io/falling-catcher-game/'
 
         
     }

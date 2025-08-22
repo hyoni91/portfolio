@@ -8,10 +8,10 @@ const projects = [
     },
     {
       id: 2,
-      title: 'BOOK STORE',
-      description: 'ブックショップのサイトを実装',
-      image: '/portfolio/images/bookshop.png',
-      icons:<i class="bi bi-shop"></i>,
+      title: 'FALLING CATCHER',
+      description: '落下する物体をキャッチするゲーム',
+      image: '/portfolio/images/game.png',
+      icons:<i class="bi bi-controller"></i>,
     },
     {
       id: 3,
